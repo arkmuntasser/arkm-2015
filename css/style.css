@@ -40,26 +40,29 @@
   position: fixed;
   bottom: 40px;
   left: 40px;
-  width: 0;
-  height: 0;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   -webkit-backface-visibility: hidden;
      -moz-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
   -webkit-perspective: 800;
   -webkit-transform-style: preserve-3d;
-  -webkit-transform: translate3d(-50%, 50%, 0);
-      -ms-transform: translate3d(-50%, 50%, 0);
-          transform: translate3d(-50%, 50%, 0);
-  -webkit-transition: padding .35s linear .3s;
-     -moz-transition: padding .35s linear .3s;
-      -ms-transition: padding .35s linear .3s;
-       -o-transition: padding .35s linear .3s;
-          transition: padding .35s linear .3s;
+  -webkit-transform: translate3d(-50%, 50%, 0) scale3d(1, 1, 1);
+      -ms-transform: translate3d(-50%, 50%, 0) scale3d(1, 1, 1);
+          transform: translate3d(-50%, 50%, 0) scale3d(1, 1, 1);
+  -webkit-transition: transform .35s linear .3s;
+     -moz-transition: transform .35s linear .3s;
+      -ms-transition: transform .35s linear .3s;
+       -o-transition: transform .35s linear .3s;
+          transition: transform .35s linear .3s;
 }
 .overlay.active {
   z-index: 2;
-  padding: 200%;
+  /*padding: 200%;*/
+  -webkit-transform: translate3d(-50%, 50%, 0) scale3d(150, 150, 1);
+      -ms-transform: translate3d(-50%, 50%, 0) scale3d(150, 150, 1);
+          transform: translate3d(-50%, 50%, 0) scale3d(150, 150, 1);
 }
 .overlay.active.hold { z-index: 1; }
 .overlay.overlay-home { background-color: #e52b90; }
