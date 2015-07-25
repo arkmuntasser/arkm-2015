@@ -43,6 +43,11 @@
   width: 0;
   height: 0;
   border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+  -webkit-perspective: 800;
+  -webkit-transform-style: preserve-3d;
   -webkit-transform: translate3d(-50%, 50%, 0);
       -ms-transform: translate3d(-50%, 50%, 0);
           transform: translate3d(-50%, 50%, 0);
