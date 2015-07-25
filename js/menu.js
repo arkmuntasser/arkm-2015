@@ -26,7 +26,7 @@ $("[data-nav]").on("click", function() {
         $("[data-menu]").removeClass("drop").addClass("nodrop");
         $("[data-expand]").removeClass("drop");
         $("[data-content='" + index + "']").addClass("active");
-      }, 500);
+      }, 400);
     }
   }
 });

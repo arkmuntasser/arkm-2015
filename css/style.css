@@ -59,7 +59,6 @@
 }
 .overlay.active {
   z-index: 2;
-  /*padding: 200%;*/
   -webkit-transform: translate3d(-50%, 50%, 0) scale3d(150, 150, 1);
       -ms-transform: translate3d(-50%, 50%, 0) scale3d(150, 150, 1);
           transform: translate3d(-50%, 50%, 0) scale3d(150, 150, 1);
