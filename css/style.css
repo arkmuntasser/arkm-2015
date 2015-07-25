@@ -23,6 +23,7 @@
   z-index: 1;
   width: 100%;
   opacity: 0;
+  -webkit-transform: translateZ(0);
   -webkit-transition: opacity .25s linear .1s;
      -moz-transition: opacity .25s linear .1s;
       -ms-transition: opacity .25s linear .1s;
@@ -42,9 +43,9 @@
   width: 0;
   height: 0;
   border-radius: 50%;
-  -webkit-transform: translate(-50%, 50%);
-      -ms-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%), translateZ(0);
+      -ms-transform: translate(-50%, 50%), translateZ(0);
+          transform: translate(-50%, 50%), translateZ(0);
   -webkit-transition: padding .35s linear .3s;
      -moz-transition: padding .35s linear .3s;
       -ms-transition: padding .35s linear .3s;
@@ -53,7 +54,7 @@
 }
 .overlay.active {
   z-index: 2;
-  padding: 150%;
+  padding: 200%;
 }
 .overlay.active.hold { z-index: 1; }
 .overlay.overlay-home { background-color: #e52b90; }
@@ -81,6 +82,7 @@
   font-size: 14px;
   color: #333;
   opacity: 0;
+  -webkit-transform: translateZ(0);
   -webkit-transition: all .25s;
      -moz-transition: all .25s;
       -ms-transition: all .25s;
@@ -135,6 +137,7 @@
   bottom: 0;
   margin-bottom: 15px;
   opacity: 0;
+  -webkit-transform: translateZ(0);
   -webkit-transition: all .2s;
      -moz-transition: all .2s;
       -ms-transition: all .2s;
@@ -148,6 +151,7 @@
 .menu-container.open .menu-items .menu-item {
   bottom: 105px;
   opacity: 1;
+  -webkit-transform: translateZ(0);
   -webkit-transition: all .25s;
      -moz-transition: all .25s;
       -ms-transition: all .25s;
@@ -168,6 +172,7 @@
 .menu-container.drop .menu-items .menu-item.active .floating-button {
   box-shadow: 0 0 0 rgba(0,0,0,.3);
   opacity: 0;
+  -webkit-transform: translateZ(0);
   -webkit-transition: box-shadow .1s linear .2s, opacity .25s linear .4s;
      -moz-transition: box-shadow .1s linear .2s, opacity .25s linear .4s;
       -ms-transition: box-shadow .1s linear .2s, opacity .25s linear .4s;
