@@ -11,20 +11,22 @@ $("body").on("click", function(e) {
 });
 
 $("[data-nav]").on("click", function() {
-  if(!$(this).hasClass("active")) {
-    $("[data-nav]").removeClass("active");
-    $(this).addClass("active");
-    $("[data-menu]").addClass("drop").removeClass("open").removeClass("nodrop");
-    $("[data-expand]").addClass("drop");
-    var index = $(this).attr("data-index");
-    $(".overlay.active").addClass("hold");
-    $("[data-overlay='" + index + "']").addClass("active");
-    $(".page-content").removeClass("active");
-    $("[data-content='" + index + "']").addClass("active");
-    setTimeout(function() {
-      $(".overlay.hold").removeClass("active").removeClass("hold");
-      $("[data-menu]").removeClass("drop").addClass("nodrop");
-      $("[data-expand]").removeClass("drop");
-    }, 300);
+  if($("[data-menu]").hasClass("open")){
+    if(!$(this).hasClass("active")) {
+      $("[data-nav]").removeClass("active");
+      $(this).addClass("active");
+      $("[data-menu]").addClass("drop").removeClass("open").removeClass("nodrop");
+      $("[data-expand]").addClass("drop");
+      var index = $(this).attr("data-index");
+      $(".overlay.active").addClass("hold");
+      $("[data-overlay='" + index + "']").addClass("active");
+      $(".page-content").removeClass("active");
+      setTimeout(function() {
+        $(".overlay.hold").removeClass("active").removeClass("hold");
+        $("[data-menu]").removeClass("drop").addClass("nodrop");
+        $("[data-expand]").removeClass("drop");
+        $("[data-content='" + index + "']").addClass("active");
+      }, 500);
+    }
   }
 });
