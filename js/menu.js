@@ -22,11 +22,11 @@ $("[data-nav]").on("click", function() {
       $("[data-overlay='" + index + "']").addClass("active");
       $(".page-content").removeClass("active");
       setTimeout(function() {
-        $(".overlay.hold").removeClass("active").removeClass("hold");
+        $(".overlay.hold").removeClass("active").removeClass("hold").removeClass("init");
         $("[data-menu]").removeClass("drop").addClass("nodrop");
         $("[data-expand]").removeClass("drop");
         $("[data-content='" + index + "']").addClass("active");
-      }, 400);
+      }, 800);
     }
   }
 });
