@@ -4,4 +4,3 @@ url:           https://arkmuntasser.github.io/
 
 markdown:      rdiscount
 permalink:     pretty
-highlighter:   pygments
