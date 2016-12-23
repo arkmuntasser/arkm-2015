@@ -214,7 +214,29 @@
 </header>
 
 
-    <div class="container">
+    twitter banner
+<!-- https://docs.google.com/spreadsheets/d/1WZm_0b5TgN9wLmwCbWztuMggzo6s8n2Y2cf__kGMJ4Y/pubhtml -->
+<script src="tabletop.js"></script>
+<script>
+  window.onload = function() { init() };
+
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1WZm_0b5TgN9wLmwCbWztuMggzo6s8n2Y2cf__kGMJ4Y/pubhtml';
+
+    function init() {
+      Tabletop.init({
+        key: publicSpreadsheetUrl,
+        callback: showInfo,
+        simpleSheet: true
+      });
+    }
+
+    function showInfo(data, tabletop) {
+      console.log('Success: ', data);
+    }
+</script>
+
+
+<div class="container">
   <h1>This is an example of some text that is surrounded by an h1 tag.</h1>
 
   <p class="lead">Search engines look for H1s to determine a page's title and use that in the weighting of the page in their rankings.</p>
