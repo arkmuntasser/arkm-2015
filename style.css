@@ -1,0 +1,14 @@
+.col { padding: 0 16px; }
+
+@media (min-width: 48em) {
+  .section {
+    display: table;
+    margin: 0 -16px;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .col {
+    display: table-cell;
+    vertical-align: top;
+  }
+}

@@ -1,0 +1,19 @@
+<!-- widget css -->
+<link rel="stylesheet" href="/widgets/blog/blog-list.css" />
+
+<!-- widget html -->
+<div class="blog-list posts">
+  <h6>Blog</h6>
+  {% for post in site.posts limit:5 %}
+    <article class="post">
+      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+
+      <div class="entry">
+        <p>
+          {{ post.excerpt }} <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </p>
+      </div>
+    </article>
+  {% endfor %}
+  <a href="{{ site.baseurl }}/archive">View All</a>
+</div>

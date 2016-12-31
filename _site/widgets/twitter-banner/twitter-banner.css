@@ -1,9 +1,71 @@
 .twitter-banner {
   position: relative;
-  padding: 0 32px;
+  margin-bottom: 32px;
   width: 100%;
-  height: 300px;
-  font-size: 28px;
-  line-height: 300px;
+  height: 400px;
+  font-size: 32px;
+  color: #fff;
+  box-shadow: inset 0 0 15px 0px rgba(0,0,0,0.3);
   background-color: whitesmoke;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.twitter-banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.twitter-banner a {
+  color: #fff;
+  /*text-decoration: none;*/
+}
+
+.twitter-banner .text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.twitter-banner .caption {
+  margin-bottom: 8px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.twitter-banner .byline {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 45%;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.twitter-banner .twitter-icon-container,
+.twitter-banner .twitter-byline-container {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  text-align: right;
+  transform: translateX(-50%);
+}
+
+.twitter-banner .twitter-byline-container {
+  top: auto;
+  bottom: 16px;
+}
+
+.twitter-banner .icon-twitter { font-size: 36px; }
+
+.twitter-banner .username {
+  font-size: 18px;
+  line-height: 36px;
+  text-decoration: none;
+  vertical-align: bottom;
 }

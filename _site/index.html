@@ -1,211 +1,219 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" >
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+
+
+
     <link href="public/ico/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-    <title>arkmuntasser</title>
+    <title>arkmuntasser – Just a super cool cat doin' some code stuff</title>
+
+    <link rel="alternate" type="application/rss+xml" title="arkmuntasser - Just a super cool cat doin' some code stuff" href="/feed.xml" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400|Work+Sans:400,700" rel="stylesheet">
 
     <!-- Icons -->
+    <link href="/fontello.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+    <link href="/style.css" rel="stylesheet">
 
     <!-- Critical Styles -->
     <style>
       /*
-        FONTS
+  FONTS
 
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300|400;
-        font-style: normal|italic;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300|400;
+  font-style: normal|italic;
 
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 400|700;
-      */
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400|700;
+*/
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      html,
-      body {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 16px;
-        line-height: 24px;
-        color: #212121;
-        background-color: #fcfcfc;
-      }
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+  background-color: #fcfcfc;
+}
 
-      @media (max-width: 640px) {
-        html,
-        body {
-          font-size: 15px;
-          line-height: 22px;
-        }
-      }
+@media (max-width: 640px) {
+  html,
+  body {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
 
-      h1 {
-        margin-top: 12px;
-        margin-bottom: 24px;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 56px;
-        text-transform: none;
-      }
+.clear { clear: both; }
 
-      @media (max-width: 640px) {
-        h1 {
-          font-size: 42px;
-          line-height: 48px;
-        }
-      }
+h1 {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: none;
+}
 
-      h2 {
-        margin-top: 9px;
-        margin-bottom: 18px;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        text-transform: uppercase;
-        letter-spacing: -1px;
-      }
+@media (max-width: 640px) {
+  h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
 
-      @media (max-width: 640px) {
-        h2 {
-          font-size: 32px;
-          line-height: 36px;
-        }
-      }
+h2 {
+  margin-top: 9px;
+  margin-bottom: 18px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
 
-      h3 {
-        margin-top: 9px;
-        margin-bottom: 16px;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 36px;
-        text-transform: none;
-        letter-spacing: -1px;
-      }
+@media (max-width: 640px) {
+  h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
 
-      @media (max-width: 640px) {
-        h3 {
-          font-size: 28px;
-          line-height: 30px;
-        }
-      }
+h3 {
+  margin-top: 9px;
+  margin-bottom: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: none;
+  letter-spacing: -1px;
+}
 
-      h4 {
-        margin-top: 8px;
-        margin-bottom: 14px;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 34px;
-        text-transform: none;
-      }
+@media (max-width: 640px) {
+  h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
 
-      @media (max-width: 640px) {
-        h4 {
-          font-size: 26px;
-          line-height: 30px;
-        }
-      }
+h4 {
+  margin-top: 8px;
+  margin-bottom: 14px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: none;
+}
 
-      h5 {
-        margin-top: 8px;
-        margin-bottom: 12px;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 32px;
-        text-transform: uppercase;
-      }
+@media (max-width: 640px) {
+  h4 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
 
-      @media (max-width: 640px) {
-        h5 {
-          font-size: 22px;
-          line-height: 28px;
-        }
-      }
+h5 {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
 
-      h6 {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 28px;
-        text-transform: uppercase;
-      }
+@media (max-width: 640px) {
+  h5 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
 
-      @media (max-width: 640px) {
-        h6 {
-          font-size: 16px;
-          line-height: 24px;
-        }
-      }
+h6 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
 
-      p { margin-bottom: 16px; }
-      p.lead {
-        font-weight: 300;
-        font-style: italic;
-        font-size: 22px;
-        line-height: 36px;
-        color: #e91e63;
-        color: #ff0080;
-      }
+@media (max-width: 640px) {
+  h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 
-      @media (max-width: 640px) {
-        p.lead {
-          font-size: 20px;
-          line-height: 32px;
-        }
-      }
+p { margin-bottom: 16px; }
+p.lead {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 36px;
+  color: #e91e63;
+  color: #ff0080;
+}
 
-      a {
-        color: #f50057;
-        text-decoration: underline;
-      }
-      a:hover,
-      a:active { color: #d81b60; }
-      a:visited { color: #c51162; }
+@media (max-width: 640px) {
+  p.lead {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
 
-      ul,
-      ol {
-        margin-left: 18px;
-        margin-bottom: 16px;
-      }
+a {
+  color: #f50057;
+  text-decoration: underline;
+}
+a:hover,
+a:active { color: #d81b60; }
+a:visited { color: #c51162; }
 
-      .container {
-        position: relative;
-        margin: 0 auto;
-        padding-left: 16px;
-        padding-right: 16px;
-        width: 100%;
-        max-width: 980px;
-      }
+ul,
+ol {
+  margin-left: 18px;
+  margin-bottom: 16px;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  max-width: 980px;
+}
 
     </style>
   </head>
   <body>
-
     <header class="masthead">
   <div class="container">
     <h1>arkmuntasser</h1>
@@ -214,13 +222,111 @@
 </header>
 
 
-    <link rel="stylesheet" href="/widgets/twitter-banner/twitter-banner.css" />
-<div class="twitter-banner">
-  twitter banner
+    
+  404 - Page not found
+
+  About
+
+  
+
+  
+
+  
+
+
+<!-- widget css -->
+<link rel="stylesheet" href="/widgets/twitter-banner/twitter-banner.css" />
+
+<!-- widget html -->
+<div class="twitter-banner" data-social-banner>
+  <div class="text">
+    <div class="container">
+      <div class="caption" data-social-banner-caption></div>
+      <div class="byline">
+        <span data-social-banner-date></span>
+      </div>
+    </div>
+  </div>
+  <div class="container twitter-byline-container">
+    <a href="https://twitter.com/arkmuntasser" target="_blank">
+      <span class="icon-twitter"></span><span class="username">@arkmuntasser</span>
+    </a>
+  </div>
 </div>
+
+<!-- widget scripts -->
 <script src="/widgets/twitter-banner/tabletop.js"></script>
 <script src="/widgets/twitter-banner/twitter-banner.js"></script>
 
+
+<div class="container">
+  <div class="section">
+    <div class="col">
+      <!-- widget css -->
+<link rel="stylesheet" href="/widgets/blog/blog-list.css" />
+
+<!-- widget html -->
+<div class="blog-list posts">
+  <h6>Blog</h6>
+  
+    <article class="post">
+      <h5><a href="/2015/02/20/Hello-World/">2 Test 2 Furious</a></h5>
+
+      <div class="entry">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/2015/02/20/Hello-World/" class="read-more">Read More</a>
+        </p>
+      </div>
+    </article>
+  
+    <article class="post">
+      <h5><a href="/2014/03/03/Hello-World/">You're up and running!</a></h5>
+
+      <div class="entry">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/2014/03/03/Hello-World/" class="read-more">Read More</a>
+        </p>
+      </div>
+    </article>
+  
+  <a href="/archive">View All</a>
+</div>
+
+    </div>
+    <div class="col">
+      <!-- widget css -->
+<link rel="stylesheet" href="/widgets/blog/blog-list.css" />
+
+<!-- widget html -->
+<div class="blog-list posts">
+  <h6>Blog</h6>
+  
+    <article class="post">
+      <h5><a href="/2015/02/20/Hello-World/">2 Test 2 Furious</a></h5>
+
+      <div class="entry">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/2015/02/20/Hello-World/" class="read-more">Read More</a>
+        </p>
+      </div>
+    </article>
+  
+    <article class="post">
+      <h5><a href="/2014/03/03/Hello-World/">You're up and running!</a></h5>
+
+      <div class="entry">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/2014/03/03/Hello-World/" class="read-more">Read More</a>
+        </p>
+      </div>
+    </article>
+  
+  <a href="/archive">View All</a>
+</div>
+
+    </div>
+  </div>
+</div>
 
 <div class="container">
   <h1>This is an example of some text that is surrounded by an h1 tag.</h1>
@@ -312,7 +418,6 @@
 
 
     
-
 
   </body>
 </html>
