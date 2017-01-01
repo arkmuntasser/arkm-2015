@@ -1,0 +1,17 @@
+<div class="imagebox">
+  <div class="imagebox-inner">
+    <div class="imagebox-img-container">
+      <div class="imagebox-shadow"></div>
+      <div class="imagebox-img blend-gradient">
+        <div class="title">
+          {{ feature.label }}
+        </div>
+      </div>
+    </div>
+    <div class="imagebox-text">
+      {% for dev-tag in feature.dev-tags %}
+        <span class="tag">#{{ dev-tag.tag }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</div>

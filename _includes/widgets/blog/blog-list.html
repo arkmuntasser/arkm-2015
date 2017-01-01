@@ -1,19 +1,15 @@
 <!-- widget css -->
-<link rel="stylesheet" href="/widgets/blog/blog-list.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/widgets/blog/blog-list.css" />
 
 <!-- widget html -->
 <div class="blog-list posts">
-  <h6>Blog</h6>
-  {% for post in site.posts limit:5 %}
-    <article class="post">
-      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
-
-      <div class="entry">
-        <p>
-          {{ post.excerpt }} <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-        </p>
-      </div>
-    </article>
-  {% endfor %}
-  <a href="{{ site.baseurl }}/archive">View All</a>
+  <h4>Recent Posts</h4>
+  <ul class="no-bullets">
+    {% for post in site.posts limit:5 %}
+      <li>
+        {% include widgets/blog/post-item.html %}
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{{ site.baseurl }}/blog">View All Posts</a>
 </div>

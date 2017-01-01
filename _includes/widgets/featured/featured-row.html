@@ -1,0 +1,18 @@
+<!-- widget css -->
+<link rel="stylesheet" href="{{ site.baseurl }}/widgets/featured/featured-row.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/widgets/featured/imagebox.css" />
+
+<!-- widget html -->
+<div class="featured-row">
+  <div class="container">
+    <h4>Featured Sites</h4>
+    <div class="section">
+      {% assign featured = site.portfolio | where: 'featured', 'true' %}
+      {% for feature in featured %}
+        <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          {% include widgets/featured/imagebox.html %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

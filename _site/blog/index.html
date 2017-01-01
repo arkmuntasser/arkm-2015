@@ -10,11 +10,11 @@
 
   <meta name="twitter:site" content="@arkmuntasser">
   <meta name="twitter:creator" content="@arkmuntasser">
-  <meta name="twitter:title" content="You're up and running!">
-  <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.">
+  <meta name="twitter:title" content="Blog">
+  <meta name="twitter:description" content="">
 
-  <meta itemprop="name" content="You're up and running!">
-  <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.">
+  <meta itemprop="name" content="Blog">
+  <meta itemprop="description" content="">
 
   
 
@@ -24,7 +24,7 @@
 
     <link href="public/ico/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-    <title>You're up and running! – arkmuntasser – Just a super cool cat doin' some code stuff</title>
+    <title>Blog – arkmuntasser – Just a super cool cat doin' some code stuff</title>
 
     <link rel="alternate" type="application/rss+xml" title="arkmuntasser - Just a super cool cat doin' some code stuff" href="/feed.xml" />
 
@@ -206,14 +206,30 @@ a {
   color: #f50057;
   text-decoration: underline;
 }
-a:hover,
+/*a:hover,
 a:active { color: #d81b60; }
-a:visited { color: #c51162; }
+a:visited { color: #c51162; }*/
 
 ul,
 ol {
   margin-left: 18px;
   margin-bottom: 16px;
+}
+
+.no-bullets {
+  margin-left: 0;
+  list-style: none;
+}
+
+.inline-list {
+  margin: 0;
+  list-style: none;
+}
+.inline-list li { display: inline-block; }
+
+.blend-gradient {
+  background: -webkit-linear-gradient(135deg, rgb(250, 75, 42), rgb(255, 0, 128));
+  background: linear-gradient(135deg, rgb(250, 75, 42), rgb(255, 0, 128));
 }
 
 .container {
@@ -222,41 +238,119 @@ ol {
   padding-left: 16px;
   padding-right: 16px;
   width: 100%;
-  max-width: 980px;
+  max-width: 1024px;
+}
+
+.section { margin: 0 -16px; }
+
+.section:before,
+.section:after {
+  content: "";
+  display: table;
+}
+.section:after { clear: both; }
+
+.col {
+  float: left;
+  padding: 0 16px;
+  vertical-align: top;
+}
+
+.col-xs-3 { width: 25%; }
+.col-xs-4 { width: 33.33333%; }
+.col-xs-6 { width: 50%; }
+.col-xs-8 { width: 66.66667%; }
+.col-xs-12 { width: 100%; }
+
+@media (min-width: 321px) {
+  .col-sm-3 { width: 25%; }
+  .col-sm-4 { width: 33.33333%; }
+  .col-sm-6 { width: 50%; }
+  .col-sm-8 { width: 66.66667%; }
+  .col-sm-12 { width: 100%; }
+}
+
+@media (min-width: 641px) {
+  .col-md-3 { width: 25%; }
+  .col-md-4 { width: 33.33333%; }
+  .col-md-6 { width: 50%; }
+  .col-md-8 { width: 66.66667%; }
+  .col-md-12 { width: 100%; }
+}
+
+@media (min-width: 1025px) {
+  .col-lg-3 { width: 25%; }
+  .col-lg-4 { width: 33.33333%; }
+  .col-lg-6 { width: 50%; }
+  .col-lg-8 { width: 66.66667%; }
+  .col-lg-12 { width: 100%; }
 }
 
     </style>
   </head>
   <body>
     <header class="masthead">
+  <!-- <div class="blend-gradient top-banner"></div> -->
   <div class="container">
-    <h1>arkmuntasser</h1>
-    <p class="lead">Just a super cool cat doin' some code stuff</p>
+    <!-- <h1>arkmuntasser</h1> -->
   </div>
 </header>
 
+<!-- widget css -->
+<link rel="stylesheet" href="/widgets/nav/main-nav.css" />
+
+<!-- widget html -->
+<nav class="main-nav">
+  <div class="container">
+    <ul class="inline-list">
+      
+      
+      
+        <li class="current"><a href="/blog/">Blog</a></li>
+      
+        <li class=""><a href="/playground/">Playground</a></li>
+      
+        <li class=""><a href="/portfolio/">Portfolio</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+
 
     <div class="container">
-  <article class="post">
-    <h1>You're up and running!</h1>
+  <article class="page">
+    <h1>Blog</h1>
 
     <div class="entry">
-      <p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</p>
+      this is a test
 
-<p>The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub.</p>
-
-    </div>
-
-    <div class="date">
-      Written on March  3, 2014
     </div>
   </article>
 </div>
 
 
     <footer class="footer">
-  footer
-
+  <div class="container">
+    footer
+    <div class="social-links">
+      <ul class="inline-list">
+        
+          <li>
+            <a href="mailto:arkmuntasser@gmail.com" target="_blank"><i class="icon-mail-alt"></i></a>
+          </li>
+        
+          <li>
+            <a href="https://github.com/arkmuntasser" target="_blank"><i class="icon-github-circled"></i></a>
+          </li>
+        
+          <li>
+            <a href="https://twitter.com/arkmuntasser" target="_blank"><i class="icon-twitter"></i></a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 </footer>
 
 

@@ -1,4 +1,14 @@
 <footer class="footer">
-  footer
-
+  <div class="container">
+    footer
+    <div class="social-links">
+      <ul class="inline-list">
+        {% for link in site.footer-links %}
+          <li>
+            <a href="{{ link.url }}" target="_blank"><i class="icon-{{link.icon}}"></i></a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </footer>

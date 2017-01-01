@@ -1,0 +1,45 @@
+.imagebox {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.imagebox .imagebox-img-container {
+  position: relative;
+}
+
+.imagebox .imagebox-img {
+  position: relative;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 10px;
+}
+
+.imagebox .imagebox-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.7);
+  opacity: .3;
+  transition: opacity .3s cubic-bezier(0, 0, 0.3, 1);
+}
+
+.imagebox:hover .imagebox-shadow {
+  opacity: 1;
+}
+
+.imagebox .title {
+  position: absolute;
+  top: 50%;
+  padding: 0 16px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  transform: translateY(-50%);
+}

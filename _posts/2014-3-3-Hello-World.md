@@ -1,7 +1,10 @@
 ---
 layout: post
+date: 2014-3-3
 title: You're up and running!
+slug: youre-up-and-running
 excerpt: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+tags: test demo prototype
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).

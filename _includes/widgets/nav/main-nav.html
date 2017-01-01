@@ -1,0 +1,15 @@
+<!-- widget css -->
+<link rel="stylesheet" href="{{ site.baseurl }}/widgets/nav/main-nav.css" />
+
+<!-- widget html -->
+<nav class="main-nav">
+  <div class="container">
+    <ul class="inline-list">
+      {% assign currentUrl = page.url %}
+      {% assign publishedPages = site.pages | where: 'show', 'true' %}
+      {% for page in publishedPages %}
+        <li class="{% if currentUrl == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

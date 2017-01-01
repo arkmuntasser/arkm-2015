@@ -1,14 +1,20 @@
-.col { padding: 0 16px; }
+.masthead { background-color: #212121; }
 
-@media (min-width: 48em) {
-  .section {
-    display: table;
-    margin: 0 -16px;
-    width: 100%;
-    table-layout: fixed;
-  }
-  .col {
-    display: table-cell;
-    vertical-align: top;
-  }
+.masthead .top-banner {
+  width: 100%;
+  height: 8px;
+}
+
+.masthead .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.masthead h1 { color: #fff; }
+
+
+
+.footer {
+  padding: 64px 0;
+  background-color: #fff;
 }

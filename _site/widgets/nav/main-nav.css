@@ -1,0 +1,18 @@
+.main-nav {
+  position: relative;
+  background-color: #000;
+}
+
+.main-nav li { margin-right: 32px; }
+
+.main-nav li a {
+  display: block;
+  border-bottom: 4px solid #000;
+  padding: 24px 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav li a:hover { color: #f50057; }
+
+.main-nav li.current a { border-bottom-color: #f50057; }

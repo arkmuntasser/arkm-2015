@@ -192,14 +192,30 @@ a {
   color: #f50057;
   text-decoration: underline;
 }
-a:hover,
+/*a:hover,
 a:active { color: #d81b60; }
-a:visited { color: #c51162; }
+a:visited { color: #c51162; }*/
 
 ul,
 ol {
   margin-left: 18px;
   margin-bottom: 16px;
+}
+
+.no-bullets {
+  margin-left: 0;
+  list-style: none;
+}
+
+.inline-list {
+  margin: 0;
+  list-style: none;
+}
+.inline-list li { display: inline-block; }
+
+.blend-gradient {
+  background: -webkit-linear-gradient(135deg, rgb(250, 75, 42), rgb(255, 0, 128));
+  background: linear-gradient(135deg, rgb(250, 75, 42), rgb(255, 0, 128));
 }
 
 .container {
@@ -208,33 +224,87 @@ ol {
   padding-left: 16px;
   padding-right: 16px;
   width: 100%;
-  max-width: 980px;
+  max-width: 1024px;
+}
+
+.section { margin: 0 -16px; }
+
+.section:before,
+.section:after {
+  content: "";
+  display: table;
+}
+.section:after { clear: both; }
+
+.col {
+  float: left;
+  padding: 0 16px;
+  vertical-align: top;
+}
+
+.col-xs-3 { width: 25%; }
+.col-xs-4 { width: 33.33333%; }
+.col-xs-6 { width: 50%; }
+.col-xs-8 { width: 66.66667%; }
+.col-xs-12 { width: 100%; }
+
+@media (min-width: 321px) {
+  .col-sm-3 { width: 25%; }
+  .col-sm-4 { width: 33.33333%; }
+  .col-sm-6 { width: 50%; }
+  .col-sm-8 { width: 66.66667%; }
+  .col-sm-12 { width: 100%; }
+}
+
+@media (min-width: 641px) {
+  .col-md-3 { width: 25%; }
+  .col-md-4 { width: 33.33333%; }
+  .col-md-6 { width: 50%; }
+  .col-md-8 { width: 66.66667%; }
+  .col-md-12 { width: 100%; }
+}
+
+@media (min-width: 1025px) {
+  .col-lg-3 { width: 25%; }
+  .col-lg-4 { width: 33.33333%; }
+  .col-lg-6 { width: 50%; }
+  .col-lg-8 { width: 66.66667%; }
+  .col-lg-12 { width: 100%; }
 }
 
     </style>
   </head>
   <body>
     <header class="masthead">
+  <!-- <div class="blend-gradient top-banner"></div> -->
   <div class="container">
-    <h1>arkmuntasser</h1>
-    <p class="lead">Just a super cool cat doin' some code stuff</p>
+    <!-- <h1>arkmuntasser</h1> -->
   </div>
 </header>
 
-
-    
-  404 - Page not found
-
-  About
-
-  
-
-  
-
-  
-
-
 <!-- widget css -->
+<link rel="stylesheet" href="/widgets/nav/main-nav.css" />
+
+<!-- widget html -->
+<nav class="main-nav">
+  <div class="container">
+    <ul class="inline-list">
+      
+      
+      
+        <li class=""><a href="/blog/">Blog</a></li>
+      
+        <li class=""><a href="/playground/">Playground</a></li>
+      
+        <li class=""><a href="/portfolio/">Portfolio</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+    <!-- widget css -->
 <link rel="stylesheet" href="/widgets/twitter-banner/twitter-banner.css" />
 
 <!-- widget html -->
@@ -260,73 +330,205 @@ ol {
 
 
 <div class="container">
+  <p class="lead">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+  </p>
+</div>
+
+<div class="container">
   <div class="section">
-    <div class="col">
+    <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
       <!-- widget css -->
 <link rel="stylesheet" href="/widgets/blog/blog-list.css" />
 
 <!-- widget html -->
 <div class="blog-list posts">
-  <h6>Blog</h6>
-  
-    <article class="post">
-      <h5><a href="/2015/02/20/Hello-World/">2 Test 2 Furious</a></h5>
+  <h4>Recent Posts</h4>
+  <ul class="no-bullets">
+    
+      <li>
+        <article class="post">
+  <h5><a href="/blog/2-test-2-furious/">2 Test 2 Furious</a></h5>
+  <h6>February 20, 2015</h6>
 
-      <div class="entry">
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/2015/02/20/Hello-World/" class="read-more">Read More</a>
-        </p>
-      </div>
-    </article>
-  
-    <article class="post">
-      <h5><a href="/2014/03/03/Hello-World/">You're up and running!</a></h5>
+  <div class="entry">
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/blog/2-test-2-furious/" class="read-more">Read More</a>
+    </p>
+  </div>
 
-      <div class="entry">
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/2014/03/03/Hello-World/" class="read-more">Read More</a>
-        </p>
-      </div>
-    </article>
-  
-  <a href="/archive">View All</a>
+  <div class="tags">
+    
+      <span class="tag">#test</span>
+    
+      <span class="tag">#demo</span>
+    
+  </div>
+</article>
+
+      </li>
+    
+      <li>
+        <article class="post">
+  <h5><a href="/blog/youre-up-and-running/">You're up and running!</a></h5>
+  <h6>March  3, 2014</h6>
+
+  <div class="entry">
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/blog/youre-up-and-running/" class="read-more">Read More</a>
+    </p>
+  </div>
+
+  <div class="tags">
+    
+      <span class="tag">#test</span>
+    
+      <span class="tag">#demo</span>
+    
+      <span class="tag">#prototype</span>
+    
+  </div>
+</article>
+
+      </li>
+    
+  </ul>
+  <a href="/blog">View All Posts</a>
 </div>
 
     </div>
-    <div class="col">
-      <!-- widget css -->
-<link rel="stylesheet" href="/widgets/blog/blog-list.css" />
-
-<!-- widget html -->
-<div class="blog-list posts">
-  <h6>Blog</h6>
-  
-    <article class="post">
-      <h5><a href="/2015/02/20/Hello-World/">2 Test 2 Furious</a></h5>
-
-      <div class="entry">
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/2015/02/20/Hello-World/" class="read-more">Read More</a>
-        </p>
-      </div>
-    </article>
-  
-    <article class="post">
-      <h5><a href="/2014/03/03/Hello-World/">You're up and running!</a></h5>
-
-      <div class="entry">
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/2014/03/03/Hello-World/" class="read-more">Read More</a>
-        </p>
-      </div>
-    </article>
-  
-  <a href="/archive">View All</a>
-</div>
+    <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
     </div>
   </div>
 </div>
+
+<!-- widget css -->
+<link rel="stylesheet" href="/widgets/featured/featured-row.css" />
+<link rel="stylesheet" href="/widgets/featured/imagebox.css" />
+
+<!-- widget html -->
+<div class="featured-row">
+  <div class="container">
+    <h4>Featured Sites</h4>
+    <div class="section">
+      
+      
+        <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="imagebox">
+  <div class="imagebox-inner">
+    <div class="imagebox-img-container">
+      <div class="imagebox-shadow"></div>
+      <div class="imagebox-img blend-gradient">
+        <div class="title">
+          Rooster Teeth
+        </div>
+      </div>
+    </div>
+    <div class="imagebox-text">
+      
+        <span class="tag">#backend</span>
+      
+        <span class="tag">#php</span>
+      
+        <span class="tag">#laravel</span>
+      
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="imagebox">
+  <div class="imagebox-inner">
+    <div class="imagebox-img-container">
+      <div class="imagebox-shadow"></div>
+      <div class="imagebox-img blend-gradient">
+        <div class="title">
+          Shop SWS
+        </div>
+      </div>
+    </div>
+    <div class="imagebox-text">
+      
+        <span class="tag">#php</span>
+      
+        <span class="tag">#backend</span>
+      
+        <span class="tag">#frontend</span>
+      
+        <span class="tag">#magento</span>
+      
+        <span class="tag">#estore</span>
+      
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="imagebox">
+  <div class="imagebox-inner">
+    <div class="imagebox-img-container">
+      <div class="imagebox-shadow"></div>
+      <div class="imagebox-img blend-gradient">
+        <div class="title">
+          Northeast Computer Repair
+        </div>
+      </div>
+    </div>
+    <div class="imagebox-text">
+      
+        <span class="tag">#php</span>
+      
+        <span class="tag">#backend</span>
+      
+        <span class="tag">#frontend</span>
+      
+        <span class="tag">#wordpress</span>
+      
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="imagebox">
+  <div class="imagebox-inner">
+    <div class="imagebox-img-container">
+      <div class="imagebox-shadow"></div>
+      <div class="imagebox-img blend-gradient">
+        <div class="title">
+          Northeast Computer Repair
+        </div>
+      </div>
+    </div>
+    <div class="imagebox-text">
+      
+        <span class="tag">#php</span>
+      
+        <span class="tag">#backend</span>
+      
+        <span class="tag">#frontend</span>
+      
+        <span class="tag">#wordpress</span>
+      
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+    </div>
+  </div>
+</div>
+
 
 <div class="container">
   <h1>This is an example of some text that is surrounded by an h1 tag.</h1>
@@ -412,8 +614,26 @@ ol {
 
 
     <footer class="footer">
-  footer
-
+  <div class="container">
+    footer
+    <div class="social-links">
+      <ul class="inline-list">
+        
+          <li>
+            <a href="mailto:arkmuntasser@gmail.com" target="_blank"><i class="icon-mail-alt"></i></a>
+          </li>
+        
+          <li>
+            <a href="https://github.com/arkmuntasser" target="_blank"><i class="icon-github-circled"></i></a>
+          </li>
+        
+          <li>
+            <a href="https://twitter.com/arkmuntasser" target="_blank"><i class="icon-twitter"></i></a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 </footer>
 
 

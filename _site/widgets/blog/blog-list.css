@@ -1,7 +1,14 @@
 .blog-list {}
 
 .blog-list .post {
-  border-bottom: 1px solid #ccc;
   padding: 16px 0;
   margin-bottom: 16px;
+}
+
+.blog-list .post h5 { text-transform: none; }
+
+.blog-list .tag {
+  font-size: 14px;
+  font-style: italic;
+  color: #9E9E9E;
 }

@@ -2,22 +2,29 @@
 layout: default
 ---
 
-{% for page in site.pages %}
-  {{ page.title }}
-{% endfor %}
-
 {% include widgets/twitter-banner/twitter-banner.html %}
 
 <div class="container">
+  <p class="lead">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+  </p>
+</div>
+
+<div class="container">
   <div class="section">
-    <div class="col">
+    <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
       {% include widgets/blog/blog-list.html %}
     </div>
-    <div class="col">
-      {% include widgets/blog/blog-list.html %}
+    <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
     </div>
   </div>
 </div>
+
+{% include widgets/featured/featured-row.html %}
 
 <div class="container">
   <h1>This is an example of some text that is surrounded by an h1 tag.</h1>

@@ -1,14 +1,73 @@
-name:          arkmuntasser
-description:   Just a super cool cat doin' some code stuff
-url:           https://arkmuntasser.github.io/
+name: arkmuntasser
+description: Just a super cool cat doin' some code stuff
+url: https://arkmuntasser.github.io/
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  email: arkmuntasser@gmail.com
-  github: arkmuntasser
-  twitter: arkmuntasser
+  - name: email
+    icon: mail-alt
+    url: mailto:arkmuntasser@gmail.com
+  - name: github
+    icon: github-circled
+    url: https://github.com/arkmuntasser
+  - name: twitter
+    icon: twitter
+    url: https://twitter.com/arkmuntasser
 
-permalink:     pretty
+# Portfolio collection
+portfolio:
+  - name: roosterteeth
+    label: Rooster Teeth
+    url: http://roosterteeth.com
+    image: ''
+    related-post:
+    business-tags: freelance
+    dev-tags:
+      - tag: backend
+      - tag: php
+      - tag: laravel
+    featured: true
+  - name: shopsws
+    label: Shop SWS
+    url: http://shopsws.com
+    image: ''
+    related-post:
+    business-tags: sws computers
+    dev-tags:
+      - tag: php
+      - tag: backend
+      - tag: frontend
+      - tag: magento
+      - tag: estore
+    featured: true
+  - name: northeastcr
+    label: Northeast Computer Repair
+    url: http://northeastcr.com
+    image: ''
+    related-post:
+    business-tags: freelance
+    dev-tags:
+      - tag: php
+      - tag: backend
+      - tag: frontend
+      - tag: wordpress
+    featured: true
+  - name: northeastcr
+    label: Northeast Computer Repair
+    url: http://northeastcr.com
+    image: ''
+    related-post:
+    business-tags: freelance
+    dev-tags:
+      - tag: php
+      - tag: backend
+      - tag: frontend
+      - tag: wordpress
+    featured: true
+
+permalink: pretty
+
+permalink: /blog/:slug/
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
