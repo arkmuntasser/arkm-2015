@@ -5,6 +5,7 @@
 
 .imagebox .imagebox-img-container {
   position: relative;
+  margin-bottom: 16px;
 }
 
 .imagebox .imagebox-img {
@@ -42,4 +43,15 @@
   text-align: center;
   color: #fff;
   transform: translateY(-50%);
+}
+
+.imagebox .tags {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 72px;
+}
+
+.imagebox .tag {
+  color: #004D40;
+  margin-right: 4px;
 }

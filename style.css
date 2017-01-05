@@ -1,3 +1,10 @@
+.generic-banner {
+  margin-bottom: 16px;
+  padding-bottom: 66.66667%;
+  width: 100%;
+  height: 0;
+}
+
 .masthead { background-color: #212121; }
 
 .masthead .top-banner {

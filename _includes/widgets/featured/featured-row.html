@@ -5,7 +5,10 @@
 <!-- widget html -->
 <div class="featured-row">
   <div class="container">
-    <h4>Featured Sites</h4>
+    <h4>Featured Sites <span class="blinking-cursor">|</span></h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    </p>
     <div class="section">
       {% assign featured = site.portfolio | where: 'featured', 'true' %}
       {% for feature in featured %}

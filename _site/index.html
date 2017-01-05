@@ -177,7 +177,6 @@ p.lead {
   font-style: italic;
   font-size: 22px;
   line-height: 36px;
-  color: #e91e63;
   color: #ff0080;
 }
 
@@ -195,6 +194,10 @@ a {
 /*a:hover,
 a:active { color: #d81b60; }
 a:visited { color: #c51162; }*/
+
+.blinking-cursor {
+  color: #ff0080;
+}
 
 ul,
 ol {
@@ -340,13 +343,20 @@ ol {
 
 <div class="container">
   <div class="section">
+    <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="generic-banner blend-gradient"></div>
+      <h4>Recent Posts <span class="blinking-cursor">|</span></h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </p>
+      <a class="button" href="/blog">View all posts</a>
+    </div>
     <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
       <!-- widget css -->
 <link rel="stylesheet" href="/widgets/blog/blog-list.css" />
 
 <!-- widget html -->
 <div class="blog-list posts">
-  <h4>Recent Posts</h4>
   <ul class="no-bullets">
     
       <li>
@@ -400,9 +410,6 @@ ol {
 </div>
 
     </div>
-    <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
-
-    </div>
   </div>
 </div>
 
@@ -413,7 +420,10 @@ ol {
 <!-- widget html -->
 <div class="featured-row">
   <div class="container">
-    <h4>Featured Sites</h4>
+    <h4>Featured Sites <span class="blinking-cursor">|</span></h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    </p>
     <div class="section">
       
       
@@ -429,13 +439,16 @@ ol {
       </div>
     </div>
     <div class="imagebox-text">
-      
-        <span class="tag">#backend</span>
-      
-        <span class="tag">#php</span>
-      
-        <span class="tag">#laravel</span>
-      
+      <div class="tags">
+        
+          <span class="tag">#backend</span>
+        
+          <span class="tag">#php</span>
+        
+          <span class="tag">#laravel</span>
+        
+      </div>
+      <a href="http://roosterteeth.com" target="_blank">Visit Site</a>
     </div>
   </div>
 </div>
@@ -454,17 +467,20 @@ ol {
       </div>
     </div>
     <div class="imagebox-text">
-      
-        <span class="tag">#php</span>
-      
-        <span class="tag">#backend</span>
-      
-        <span class="tag">#frontend</span>
-      
-        <span class="tag">#magento</span>
-      
-        <span class="tag">#estore</span>
-      
+      <div class="tags">
+        
+          <span class="tag">#php</span>
+        
+          <span class="tag">#backend</span>
+        
+          <span class="tag">#frontend</span>
+        
+          <span class="tag">#magento</span>
+        
+          <span class="tag">#estore</span>
+        
+      </div>
+      <a href="http://shopsws.com" target="_blank">Visit Site</a>
     </div>
   </div>
 </div>
@@ -483,15 +499,18 @@ ol {
       </div>
     </div>
     <div class="imagebox-text">
-      
-        <span class="tag">#php</span>
-      
-        <span class="tag">#backend</span>
-      
-        <span class="tag">#frontend</span>
-      
-        <span class="tag">#wordpress</span>
-      
+      <div class="tags">
+        
+          <span class="tag">#php</span>
+        
+          <span class="tag">#backend</span>
+        
+          <span class="tag">#frontend</span>
+        
+          <span class="tag">#wordpress</span>
+        
+      </div>
+      <a href="http://northeastcr.com" target="_blank">Visit Site</a>
     </div>
   </div>
 </div>
@@ -510,15 +529,18 @@ ol {
       </div>
     </div>
     <div class="imagebox-text">
-      
-        <span class="tag">#php</span>
-      
-        <span class="tag">#backend</span>
-      
-        <span class="tag">#frontend</span>
-      
-        <span class="tag">#wordpress</span>
-      
+      <div class="tags">
+        
+          <span class="tag">#php</span>
+        
+          <span class="tag">#backend</span>
+        
+          <span class="tag">#frontend</span>
+        
+          <span class="tag">#wordpress</span>
+        
+      </div>
+      <a href="http://northeastcr.com" target="_blank">Visit Site</a>
     </div>
   </div>
 </div>

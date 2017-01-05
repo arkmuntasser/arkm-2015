@@ -9,9 +9,12 @@
       </div>
     </div>
     <div class="imagebox-text">
-      {% for dev-tag in feature.dev-tags %}
-        <span class="tag">#{{ dev-tag.tag }}</span>
-      {% endfor %}
+      <div class="tags">
+        {% for dev-tag in feature.dev-tags %}
+          <span class="tag">#{{ dev-tag.tag }}</span>
+        {% endfor %}
+      </div>
+      <a href="{{ feature.url }}" target="_blank">Visit Site</a>
     </div>
   </div>
 </div>
