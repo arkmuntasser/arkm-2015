@@ -8,6 +8,12 @@
   text-align: center;
 }
 
+.masthead h1 .logo {
+  width: auto;
+  height: 56px;
+  vertical-align: middle;
+}
+
 .footer {
   padding: 384px 0 64px 0;
   background-color: #101010;
@@ -28,9 +34,6 @@
 .footer .social-links ul { text-align: right; }
 .footer .social-links ul a { font-size: 28px; }
 
-.websites {
-  padding-bottom: 48px;
-  background-color: whitesmoke;
-}
+.websites { padding-bottom: 48px; }
 
 .blog-wrapper { margin-bottom: 32px; }
