@@ -1,5 +1,1 @@
-.featured-row {
-  margin: 32px 0;
-  padding: 64px 0;
-  background-color: whitesmoke;
-}
+.featured-row .block-item:nth-of-type(2n+1) { clear: both; }

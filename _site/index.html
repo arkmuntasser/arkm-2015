@@ -65,6 +65,8 @@ body {
   }
 }
 
+.left { float: left; }
+.right { float: right; }
 .clear { clear: both; }
 
 h1 {
@@ -191,9 +193,44 @@ a {
   color: #f50057;
   text-decoration: underline;
 }
-/*a:hover,
-a:active { color: #d81b60; }
-a:visited { color: #c51162; }*/
+
+.btn {
+  position: relative;
+  padding: 8px 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #f50057;
+  border-radius: 20px;
+  border: 2px solid #f50057;
+  background-color: transparent;
+}
+.btn:hover {
+  color: #fefefe;
+  background-color: #f50057;
+}
+
+.btn.btn-block { display: block; }
+
+.btn.btn-inverse {
+  border: none;
+  background-color: #fefefe;
+}
+.btn.btn-inverse:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  opacity: 0.5;
+  transition: opacity .3s cubic-bezier(0, 0, 0.31, 1);
+}
+.btn.btn-inverse:hover:before { opacity: 1; }
 
 .blinking-cursor {
   color: #ff0080;
@@ -228,6 +265,14 @@ ol {
   padding-right: 16px;
   width: 100%;
   max-width: 1024px;
+}
+
+.fluid-container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
 }
 
 .section { margin: 0 -16px; }
@@ -279,32 +324,10 @@ ol {
   </head>
   <body>
     <header class="masthead">
-  <!-- <div class="blend-gradient top-banner"></div> -->
   <div class="container">
-    <!-- <h1>arkmuntasser</h1> -->
+    <h1>arkmuntasser</h1>
   </div>
 </header>
-
-<!-- widget css -->
-<link rel="stylesheet" href="/widgets/nav/main-nav.css" />
-
-<!-- widget html -->
-<nav class="main-nav">
-  <div class="container">
-    <ul class="inline-list">
-      
-      
-      
-        <li class=""><a href="/blog/">Blog</a></li>
-      
-        <li class=""><a href="/playground/">Playground</a></li>
-      
-        <li class=""><a href="/portfolio/">Portfolio</a></li>
-      
-    </ul>
-  </div>
-</nav>
-
 
 
     <!-- widget css -->
@@ -331,83 +354,6 @@ ol {
 <script src="/widgets/twitter-banner/tabletop.js"></script>
 <script src="/widgets/twitter-banner/twitter-banner.js"></script>
 
-
-<div class="slider">
-  <div class="section">
-    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
-      <div class="item norway">
-        <div class="section">
-          <div class="col col-xs-12 col-sm-12 col-md-6">
-            <div class="item-image">
-              <img class="img-lg" src="/assets/images/slider/norway.jpg" alt="Innovation Norway" />
-              <img class="img-md" src="/assets/images/slider/norway-md.jpg" alt="Innovation Norway" />
-            </div>
-          </div>
-          <div class="col col-xs-12 col-sm-12 col-md-6">
-            <div class="item-text">
-              <div class="title">Innovation Norway</div>
-              <div class="subtitle">
-                <a href="http://www.visitnorway.com" target="_blank">www.visitnorway.com</a>
-              </div>
-              <p class="description">
-                Plan your holiday in Norway with free guides and videos. Learn about fjords, northern lights, midnight sun, where to stay, walking, fishing and more.
-              </p>
-              <a class="btn btn-block btn-inverse" href="http://www.visitnorway.com" target="_blank">View Site</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
-      <div class="item denver">
-        <div class="section">
-          <div class="col col-xs-12 col-sm-12 col-md-6">
-            <div class="item-image">
-              <img class="img-lg" src="/assets/images/slider/denver.jpg" alt="Visit Denver" />
-              <img class="img-md" src="/assets/images/slider/denver-md.jpg" alt="Visit Denver" />
-            </div>
-          </div>
-          <div class="col col-xs-12 col-sm-12 col-md-6">
-            <div class="item-text">
-              <div class="title">Visit Denver</div>
-              <div class="subtitle">
-                <a href="http://www.denver.org" target="_blank">www.denver.org</a>
-              </div>
-              <p class="description">
-                Denver's Convention & Visitors Bureau invites you to explore things to do, hotels, restaurants & more in Denver. Download our Denver Visitors Guide!
-              </p>
-              <a class="btn btn-block btn-inverse" href="http://www.denver.org" target="_blank">View Site</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
-      <div class="item kansas">
-        <div class="section">
-          <div class="col col-xs-12 col-sm-12 col-md-6">
-            <div class="item-image">
-              <img class="img-lg" src="/assets/images/slider/kansas.jpg" alt="Travel Kansas" />
-              <img class="img-md" src="/assets/images/slider/kansas-md.jpg" alt="Travel Kansas" />
-            </div>
-          </div>
-          <div class="col col-xs-12 col-sm-12 col-md-6">
-            <div class="item-text">
-              <div class="title">Travel Kansas</div>
-              <div class="subtitle">
-                <a href="http://www.travelks.com" target="_blank">www.travelks.com</a>
-              </div>
-              <p class="description">
-                Get All of the Info You Need, From Dining, Shopping, Hotels, Camping, Attractions & Things to Do. We Have What You're Looking For. Visit Today!
-              </p>
-              <a class="btn btn-block btn-inverse" href="http://www.travelks.com" target="_blank">View Site</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="container">
   <p class="lead">
@@ -490,33 +436,173 @@ ol {
   </div>
 </div>
 
-<!-- widget css -->
+<div class="websites">
+  <!-- widget css -->
+<link rel="stylesheet" href="/widgets/slider/slider.css" />
+
+<!-- widget html -->
+<div class="slider">
+  <div class="section">
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
+      <div class="item norway">
+        <div class="section">
+          <div class="col col-xs-12 col-sm-12 col-md-6">
+            <div class="item-image">
+              <img class="img-lg" src="/assets/images/slider/norway.jpg" alt="Innovation Norway" />
+              <img class="img-md" src="/assets/images/slider/norway-md.jpg" alt="Innovation Norway" />
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-6">
+            <div class="item-text">
+              <div class="title">Innovation Norway</div>
+              <div class="subtitle">
+                <a href="http://www.visitnorway.com" target="_blank">www.visitnorway.com</a>
+              </div>
+              <p class="description">
+                Plan your holiday in Norway with free guides and videos. Learn about fjords, northern lights, midnight sun, where to stay, walking, fishing and more.
+              </p>
+              <a class="btn btn-block btn-inverse" href="http://www.visitnorway.com" target="_blank">View Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
+      <div class="item denver">
+        <div class="section">
+          <div class="col col-xs-12 col-sm-12 col-md-6">
+            <div class="item-image">
+              <img class="img-lg" src="/assets/images/slider/denver.jpg" alt="Visit Denver" />
+              <img class="img-md" src="/assets/images/slider/denver-md.jpg" alt="Visit Denver" />
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-6">
+            <div class="item-text">
+              <div class="title">Visit Denver</div>
+              <div class="subtitle">
+                <a href="http://www.denver.org" target="_blank">www.denver.org</a>
+              </div>
+              <p class="description">
+                Denver's Convention & Visitors Bureau invites you to explore things to do, hotels, restaurants & more in Denver. Download our Denver Visitors Guide!
+              </p>
+              <a class="btn btn-block btn-inverse" href="http://www.denver.org" target="_blank">View Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
+      <div class="item kansas">
+        <div class="section">
+          <div class="col col-xs-12 col-sm-12 col-md-6">
+            <div class="item-image">
+              <img class="img-lg" src="/assets/images/slider/kansas.jpg" alt="Travel Kansas" />
+              <img class="img-md" src="/assets/images/slider/kansas-md.jpg" alt="Travel Kansas" />
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-6">
+            <div class="item-text">
+              <div class="title">Travel Kansas</div>
+              <div class="subtitle">
+                <a href="http://www.travelks.com" target="_blank">www.travelks.com</a>
+              </div>
+              <p class="description">
+                Get All of the Info You Need, From Dining, Shopping, Hotels, Camping, Attractions & Things to Do. We Have What You're Looking For. Visit Today!
+              </p>
+              <a class="btn btn-block btn-inverse" href="http://www.travelks.com" target="_blank">View Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="featured-row">
+    <div class="fluid-container">
+      <div class="section">
+        <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h5>Experience</h5>
+
+          <h6>Simpleview, Inc.</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+
+          <h6>Freelance</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+
+          <h6>Rooster Teeth Productions, LLC.</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+
+          <h6>SWS Electronics, Corp.</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+        </div>
+        <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <!-- widget css -->
 <link rel="stylesheet" href="/widgets/featured/featured-row.css" />
 <link rel="stylesheet" href="/widgets/featured/imagebox.css" />
 
 <!-- widget html -->
 <div class="featured-row">
-  <div class="container">
-    <h4>Featured Sites <span class="blinking-cursor">|</span></h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </p>
-    <div class="section">
-      
-      
-        <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <div class="imagebox">
+  <h4>Featured Sites <span class="blinking-cursor">|</span></h4>
+  <!-- <p>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </p> -->
+  <div class="section">
+    
+    
+      <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
+        <div class="imagebox">
   <div class="imagebox-inner">
-    <div class="imagebox-img-container">
-      <div class="imagebox-shadow"></div>
-      <div class="imagebox-img blend-gradient">
-        <div class="title">
-          Rooster Teeth
-        </div>
+    <div class="imagebox-text">
+      <div class="title">
+        Experience Columbus
+      </div>
+      <div class="subtitle">
+        <a href="http://experiencecolumbus.com" target="_blank">http://experiencecolumbus.com</a>
+      </div>
+      <p class="description">
+        Come experience Columbus, Ohio and see what makes us a great city to visit. Find things to do, hotels, restaurants, events and visitor travel information.
+      </p>
+      <div class="tags">
+        <span class="label">tags</span>
+        
+          <span class="tag">#frontend</span>
+        
       </div>
     </div>
+    <div class="imagebox-footer">
+      <a href="http://experiencecolumbus.com" target="_blank">Visit Site</a>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    
+      <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
+        <div class="imagebox">
+  <div class="imagebox-inner">
     <div class="imagebox-text">
+      <div class="title">
+        Rooster Teeth
+      </div>
+      <div class="subtitle">
+        <a href="http://roosterteeth.com" target="_blank">http://roosterteeth.com</a>
+      </div>
+      <p class="description">
+        Rooster Teeth is a production studio based in Austin, TX responsible for some of the most watched and celebrated online series ever.
+      </p>
       <div class="tags">
+        <span class="label">tags</span>
         
           <span class="tag">#backend</span>
         
@@ -525,26 +611,31 @@ ol {
           <span class="tag">#laravel</span>
         
       </div>
+    </div>
+    <div class="imagebox-footer">
       <a href="http://roosterteeth.com" target="_blank">Visit Site</a>
+      <div class="clear"></div>
     </div>
   </div>
 </div>
 
-        </div>
-      
-        <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <div class="imagebox">
-  <div class="imagebox-inner">
-    <div class="imagebox-img-container">
-      <div class="imagebox-shadow"></div>
-      <div class="imagebox-img blend-gradient">
-        <div class="title">
-          Shop SWS
-        </div>
       </div>
-    </div>
+    
+      <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
+        <div class="imagebox">
+  <div class="imagebox-inner">
     <div class="imagebox-text">
+      <div class="title">
+        Shop SWS
+      </div>
+      <div class="subtitle">
+        <a href="http://shopsws.com" target="_blank">http://shopsws.com</a>
+      </div>
+      <p class="description">
+        SWS is dedicated to providing the highest quality computer sales and service to southern Arizona's business and private communities.
+      </p>
       <div class="tags">
+        <span class="label">tags</span>
         
           <span class="tag">#php</span>
         
@@ -557,26 +648,31 @@ ol {
           <span class="tag">#estore</span>
         
       </div>
+    </div>
+    <div class="imagebox-footer">
       <a href="http://shopsws.com" target="_blank">Visit Site</a>
+      <div class="clear"></div>
     </div>
   </div>
 </div>
 
-        </div>
-      
-        <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <div class="imagebox">
-  <div class="imagebox-inner">
-    <div class="imagebox-img-container">
-      <div class="imagebox-shadow"></div>
-      <div class="imagebox-img blend-gradient">
-        <div class="title">
-          Northeast Computer Repair
-        </div>
       </div>
-    </div>
+    
+      <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
+        <div class="imagebox">
+  <div class="imagebox-inner">
     <div class="imagebox-text">
+      <div class="title">
+        Northeast Computer Repair
+      </div>
+      <div class="subtitle">
+        <a href="http://northeastcr.com" target="_blank">http://northeastcr.com</a>
+      </div>
+      <p class="description">
+        At Northeast Computer Repair we take a different approach to your digital needs. Our principles are honesty, integrity, expertise, and promptness.
+      </p>
       <div class="tags">
+        <span class="label">tags</span>
         
           <span class="tag">#php</span>
         
@@ -587,46 +683,26 @@ ol {
           <span class="tag">#wordpress</span>
         
       </div>
+    </div>
+    <div class="imagebox-footer">
       <a href="http://northeastcr.com" target="_blank">Visit Site</a>
+      <div class="clear"></div>
     </div>
   </div>
 </div>
 
-        </div>
-      
-        <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <div class="imagebox">
-  <div class="imagebox-inner">
-    <div class="imagebox-img-container">
-      <div class="imagebox-shadow"></div>
-      <div class="imagebox-img blend-gradient">
-        <div class="title">
-          Northeast Computer Repair
-        </div>
       </div>
-    </div>
-    <div class="imagebox-text">
-      <div class="tags">
-        
-          <span class="tag">#php</span>
-        
-          <span class="tag">#backend</span>
-        
-          <span class="tag">#frontend</span>
-        
-          <span class="tag">#wordpress</span>
-        
-      </div>
-      <a href="http://northeastcr.com" target="_blank">Visit Site</a>
-    </div>
+    
   </div>
 </div>
 
         </div>
-      
+      </div>
     </div>
   </div>
 </div>
+
+
 
 
 <div class="container">

@@ -16,10 +16,21 @@ footer-links:
 
 # Portfolio collection
 portfolio:
+  - name: columbus
+    label: Experience Columbus
+    url: http://experiencecolumbus.com
+    image: ''
+    description: Come experience Columbus, Ohio and see what makes us a great city to visit. Find things to do, hotels, restaurants, events and visitor travel information.
+    related-post:
+    business-tags: simpleview
+    dev-tags:
+      - tag: frontend
+    featured: true
   - name: roosterteeth
     label: Rooster Teeth
     url: http://roosterteeth.com
     image: ''
+    description: Rooster Teeth is a production studio based in Austin, TX responsible for some of the most watched and celebrated online series ever.
     related-post:
     business-tags: freelance
     dev-tags:
@@ -31,6 +42,7 @@ portfolio:
     label: Shop SWS
     url: http://shopsws.com
     image: ''
+    description: SWS is dedicated to providing the highest quality computer sales and service to southern Arizona's business and private communities.
     related-post:
     business-tags: sws computers
     dev-tags:
@@ -44,18 +56,7 @@ portfolio:
     label: Northeast Computer Repair
     url: http://northeastcr.com
     image: ''
-    related-post:
-    business-tags: freelance
-    dev-tags:
-      - tag: php
-      - tag: backend
-      - tag: frontend
-      - tag: wordpress
-    featured: true
-  - name: northeastcr
-    label: Northeast Computer Repair
-    url: http://northeastcr.com
-    image: ''
+    description: At Northeast Computer Repair we take a different approach to your digital needs. Our principles are honesty, integrity, expertise, and promptness.
     related-post:
     business-tags: freelance
     dev-tags:

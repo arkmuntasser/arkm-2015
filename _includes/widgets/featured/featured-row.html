@@ -4,18 +4,16 @@
 
 <!-- widget html -->
 <div class="featured-row">
-  <div class="container">
-    <h4>Featured Sites <span class="blinking-cursor">|</span></h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </p>
-    <div class="section">
-      {% assign featured = site.portfolio | where: 'featured', 'true' %}
-      {% for feature in featured %}
-        <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          {% include widgets/featured/imagebox.html %}
-        </div>
-      {% endfor %}
-    </div>
+  <h4>Featured Sites <span class="blinking-cursor">|</span></h4>
+  <!-- <p>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </p> -->
+  <div class="section">
+    {% assign featured = site.portfolio | where: 'featured', 'true' %}
+    {% for feature in featured %}
+      <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
+        {% include widgets/featured/imagebox.html %}
+      </div>
+    {% endfor %}
   </div>
 </div>
