@@ -4,27 +4,24 @@ layout: default
 
 {% include widgets/twitter-banner/twitter-banner.html %}
 
-<div class="container">
-  <p class="lead">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-  </p>
-</div>
-
-<div class="container">
-  <div class="section">
-    <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
-      <div class="generic-banner blend-gradient"></div>
-      <h4>Recent Posts <span class="blinking-cursor">|</span></h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </p>
-      <a class="button" href="{{ site.baseurl }}/blog">View all posts</a>
-    </div>
-    <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
-      {% include widgets/blog/blog-list.html %}
+<div class="blog-wrapper">
+  <div class="container">
+    <div class="section">
+      <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <h5>What's the word, Johannesburg?</h5>
+        <p class="lead">
+          {{ site.description }}
+        </p>
+        <p>
+          I'm Amir. I'm a CMS Production Lead Developer at <a href="http://simpleviewinc.com" target="_blank" title="Simpleview">Simpleview</a>. I build websites for the tourism industry; in fact two of my sites were in the <a href="https://skift.com/2016/07/13/the-25-best-tourism-websites-in-the-world-in-2016/" target="_blank" title="The 25 Best Tourism Websites in the World in 2016">top 25 tourism websites of 2016</a> which was pretty damn cool. Check them out when you've got a free moment: <a href="http://visitnorway.com" target="_blank" title="Visit Norway">Visit Norway</a> and <a href="http://experiencecolumbus.com" target="_blank" title="Experience Columbus">Experience Columbus</a>.
+        </p>
+        <p>
+          When I'm not building websites, I am usually chillin' with my homies and my main man, The Monarch. Which is totally not code for just playing video games with my fiancée, 😉.
+        </p>
+      </div>
+      <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        {% include widgets/blog/blog-list.html %}
+      </div>
     </div>
   </div>
 </div>
@@ -64,89 +61,4 @@ layout: default
       </div>
     </div>
   </div>
-</div>
-
-
-
-
-<div class="container">
-  <h1>This is an example of some text that is surrounded by an h1 tag.</h1>
-
-  <p class="lead">Search engines look for H1s to determine a page's title and use that in the weighting of the page in their rankings.</p>
-
-  <p>Search engines look for H1s to determine a page's title and use that in the weighting of the page in their rankings. Consequently, you never want to actually use the H1 in the content of a page because we automatically generate the H1 from the Page Name and Google would ding you for trying to game their algorithm if you had more than one on a page.</p>
-
-  <h2>This is an example of an h2</h2>
-
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
-
-  <h3>This is an example of an h3</h3>
-
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
-
-  <h4>This is an example of an h4</h4>
-
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
-
-  <h5>This is an example of an h5</h5>
-
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
-
-  <h6>This is an example of an h6</h6>
-
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
-
-  <p>This is what a bunch of text looks like without the "p tag". If you were to look at the HTML version of this page, you would notice that this grouping of text does not have any sort of tag (denoted by &lt;&gt; preceding it and following it to close the tag). That is why this text is pretty generic and lacking any style. Chances are that the leading between the lines is a lot closer than the ideal as well.</p>
-
-  <p>This, on the other hand is what text looks like when it is surrounded by "p tags". In case it is not apparent at this point, "p" stands for paragraph. It is the p tags that alert the CMS to the fact that this text needs to have certain styling applied to it. That is why this text probably looks a good deal different than the paragraph above. If you were to look at this text in the HTML, you would see a</p>
-
-  <p>just before the first word to open the tag and a just after this sentence to close it.</p>
-
-  <p>And now for some lists...we'll start with bullets</p>
-
-  <ul>
-    <li>First bullet</li>
-    <li>Second bullet</li>
-    <li>Third bullet
-    <ul>
-      <li>Indented bullet
-      <ul>
-        <li>Twice indented bullet</li>
-      </ul>
-      </li>
-    </ul>
-    </li>
-  </ul>
-
-  <p>Or if you prefer an ordered lis, as opposed to an unorded bullet list:</p>
-
-  <ol>
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item
-    <ol>
-      <li>Once indented
-      <ol>
-        <li>Twice indented</li>
-      </ol>
-      </li>
-    </ol>
-    </li>
-  </ol>
-
-  <p>And finally, we'll wrap this page up with some common text styling:</p>
-
-  <p><b>Here's an example of what bold text looks like</b></p>
-
-  <p><i>And here's italicized text</i></p>
-
-  <p><u>How about some underlining?</u></p>
-
-  <p><strike>I can't imagine why you'd use strikethrough on a website, but here you go.</strike></p>
-
-  <p>Here's and example of&nbsp;<sub>subscript</sub></p>
-
-  <p>Or how about some&nbsp;<sup>superscript</sup>?</p>
-
-  <p>And last but certainly not least, here's what a&nbsp;<a href="http://www.google.com/" target="_blank">hyperlink</a>&nbsp;looks like on this site.</p>
 </div>

@@ -1,14 +1,35 @@
 .blog-list {}
 
-.blog-list .post {
-  padding: 16px 0;
-  margin-bottom: 16px;
+.blog-list-footer { padding: 4px 0; }
+
+.blog-list .post { padding: 16px 0; }
+
+.blog-list .post .title a {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #212121;
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0, 0, 0.31, 1);
 }
 
-.blog-list .post h5 { text-transform: none; }
+.blog-list .post .title a:hover { color: #ff0080; }
 
-.blog-list .tag {
+.blog-list .post .subtitle {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.blog-list .post .tags {
+  padding: 8px 0;
+  border-top: 1px solid #ddd;
+}
+
+.blog-list .post .tags .tag {
   font-size: 14px;
   font-style: italic;
-  color: #9E9E9E;
+  color: #004D40;
 }

@@ -1,18 +1,18 @@
 name: arkmuntasser
-description: Just a super cool cat doin' some code stuff
+description: Just a super cool cat doin' some code stuff...
 url: https://arkmuntasser.github.io/
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  - name: email
-    icon: mail-alt
-    url: mailto:arkmuntasser@gmail.com
-  - name: github
-    icon: github-circled
-    url: https://github.com/arkmuntasser
   - name: twitter
     icon: twitter
     url: https://twitter.com/arkmuntasser
+  - name: github
+    icon: github-circled
+    url: https://github.com/arkmuntasser
+  - name: email
+    icon: mail-alt
+    url: mailto:arkmuntasser@gmail.com
 
 # Portfolio collection
 portfolio:

@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/widgets/blog/blog-list.css" />
 
 <!-- widget html -->
+<h4>Recent Posts <span class="blinking-cursor">|</span></h4>
 <div class="blog-list posts">
   <ul class="no-bullets">
     {% for post in site.posts limit:5 %}
@@ -10,5 +11,7 @@
       </li>
     {% endfor %}
   </ul>
-  <a href="{{ site.baseurl }}/blog">View All Posts</a>
+  <div class="blog-list-footer">
+    <a class="btn" href="{{ site.baseurl }}/blog">Read More Posts</a>
+  </div>
 </div>

@@ -1,10 +1,3 @@
-.generic-banner {
-  margin-bottom: 16px;
-  padding-bottom: 66.66667%;
-  width: 100%;
-  height: 0;
-}
-
 .masthead { background-color: #fff; }
 
 .masthead h1 {
@@ -15,16 +8,29 @@
   text-align: center;
 }
 
-
-
 .footer {
-  padding: 64px 0;
-  background-color: #fff;
+  padding: 384px 0 64px 0;
+  background-color: #101010;
 }
 
+.footer .container { max-width: 1440px; }
+
+.footer .sign-off {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer .social-links ul { text-align: right; }
+.footer .social-links ul a { font-size: 28px; }
 
 .websites {
-  margin-bottom: 32px;
   padding-bottom: 48px;
   background-color: whitesmoke;
 }
+
+.blog-wrapper { margin-bottom: 32px; }

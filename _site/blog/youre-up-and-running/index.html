@@ -24,9 +24,9 @@
 
     <link href="public/ico/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-    <title>You're up and running! – arkmuntasser – Just a super cool cat doin' some code stuff</title>
+    <title>You're up and running! – arkmuntasser – Just a super cool cat doin' some code stuff...</title>
 
-    <link rel="alternate" type="application/rss+xml" title="arkmuntasser - Just a super cool cat doin' some code stuff" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="arkmuntasser - Just a super cool cat doin' some code stuff..." href="/feed.xml" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400|Work+Sans:400,700" rel="stylesheet">
@@ -215,23 +215,13 @@ a {
   font-weight: 400;
   text-align: center;
   text-decoration: none;
-  color: #f50057;
-  border-radius: 20px;
-  border: 2px solid #f50057;
-  background-color: transparent;
-}
-.btn:hover {
   color: #fefefe;
-  background-color: #f50057;
+  border-radius: 20px;
+  background-color: transparent;
+  background: -webkit-linear-gradient(135deg, rgb(250, 75, 42), rgb(255, 0, 128));
+  background: linear-gradient(135deg, rgb(250, 75, 42), rgb(255, 0, 128));
 }
-
-.btn.btn-block { display: block; }
-
-.btn.btn-inverse {
-  border: none;
-  background-color: #fefefe;
-}
-.btn.btn-inverse:before {
+.btn:before {
   content: "";
   position: absolute;
   top: 0;
@@ -244,11 +234,16 @@ a {
   opacity: 0.5;
   transition: opacity .3s cubic-bezier(0, 0, 0.31, 1);
 }
-.btn.btn-inverse:hover:before { opacity: 1; }
+.btn:hover:before { opacity: 1; }
 
-.blinking-cursor {
-  color: #ff0080;
-}
+.btn.btn-block { display: block; }
+
+.btn.btn-inverse { background: #fefefe; }
+
+img { max-width: 100%; }
+
+.link-arrow,
+.blinking-cursor { color: #ff0080; }
 
 ul,
 ol {
@@ -364,12 +359,15 @@ ol {
 
     <footer class="footer">
   <div class="container">
-    footer
+    <p class="sign-off">
+      <img src="/assets/images/footer/cowboy.png" alt="See you space cowboy..." />
+    </p>
+
     <div class="social-links">
       <ul class="inline-list">
         
           <li>
-            <a href="mailto:arkmuntasser@gmail.com" target="_blank"><i class="icon-mail-alt"></i></a>
+            <a href="https://twitter.com/arkmuntasser" target="_blank"><i class="icon-twitter"></i></a>
           </li>
         
           <li>
@@ -377,7 +375,7 @@ ol {
           </li>
         
           <li>
-            <a href="https://twitter.com/arkmuntasser" target="_blank"><i class="icon-twitter"></i></a>
+            <a href="mailto:arkmuntasser@gmail.com" target="_blank"><i class="icon-mail-alt"></i></a>
           </li>
         
       </ul>

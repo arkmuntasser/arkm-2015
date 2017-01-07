@@ -9,6 +9,10 @@
 <lastmod>2014-03-03T00:00:00-07:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/youre-up-and-running-again/</loc>
+<lastmod>2014-03-03T00:00:00-07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/404.html</loc>
 </url>
 <url>
@@ -22,5 +26,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/portfolio/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/styles/</loc>
 </url>
 </urlset>
