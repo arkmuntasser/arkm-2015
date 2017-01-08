@@ -3,7 +3,8 @@
   "background_color": "#ffffff",
   "name": "Arkmuntasser – Just a super cool cat doin' some code stuff...",
   "short_name": "arkmuntasser",
-  "display": "standalone",
+  "start_url": "/",
+  "display": "browser",
   "icons": [
     {
       "src": "YOU-NEED-TO-HAVE-A-144-x-144-ICON.png",
