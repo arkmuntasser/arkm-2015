@@ -46,6 +46,7 @@
 }
 
 .imagebox .tags .tag {
-  color: #004D40;
   margin-right: 4px;
+  font-style: italic;
+  color: #004D40;
 }

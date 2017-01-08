@@ -37,6 +37,7 @@
 
     <!-- Styles -->
     <link href="/style.css" rel="stylesheet">
+    <link href="/svmenu.css" rel="stylesheet">
 
     <!-- Critical Styles -->
     <style>
@@ -367,7 +368,30 @@ blockquote {
   <div class="container">
     <h1><a href="/" title="Home"><img class="logo" src="/assets/images/header/logo-at.png" alt="@" /> arkmuntasser</a></h1>
   </div>
+  <button class="menu-toggle material-icons left" data-svmenu-open>menu</button>
+  <div class="clear"></div>
 </header>
+
+<aside class="svmenu" data-svmenu>
+  <nav class="svmenu-inner" data-svmenu-inner>
+    <div class="svmenu-close-container">
+      <button class="svmenu-close material-icons" data-svmenu-close>close</button>
+    </div>
+    <div class="svmenu-content">
+      <ul class="svmenu-content-inner">
+        
+        
+          <li class="svmenu-item"><div class="svmenu-item-inner"><a href="/blog/" title="Blog">Blog</a></div></li>
+        
+          <li class="svmenu-item"><div class="svmenu-item-inner"><a href="/projects/" title="Projects">Projects</a></div></li>
+        
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter">Twitter</a></div></li>
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile">GitHub</a></div></li>
+      </ul>
+    </div>
+  </nav>
+</aside>
+
 
 
     <div class="container">
@@ -385,9 +409,9 @@ blockquote {
     <ul class="no-bullets sitemap">
       
       
-        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/blog/" title="Blog">Blog</a></li>
       
-        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/projects/" title="Projects">Projects</a></li>
       
       <li>
         <a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter account">Twitter</a>
@@ -445,7 +469,7 @@ blockquote {
 </footer>
 
 
-    
+    <script src="/svmenu.js"></script>
 
   </body>
 </html>

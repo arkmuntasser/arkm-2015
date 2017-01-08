@@ -1,4 +1,7 @@
-.masthead { background-color: #fff; }
+.masthead {
+  position: relative;
+  background-color: #fff;
+}
 
 .masthead h1 {
   margin: 0;

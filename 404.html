@@ -14,7 +14,7 @@ permalink: /404.html
     <ul class="no-bullets sitemap">
       {% assign publishedPages = site.pages | where: 'show', 'true' %}
       {% for page in publishedPages %}
-        <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></li>
       {% endfor %}
       <li>
         <a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter account">Twitter</a>

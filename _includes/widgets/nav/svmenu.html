@@ -1,0 +1,17 @@
+<aside class="svmenu" data-svmenu>
+  <nav class="svmenu-inner" data-svmenu-inner>
+    <div class="svmenu-close-container">
+      <button class="svmenu-close material-icons" data-svmenu-close>close</button>
+    </div>
+    <div class="svmenu-content">
+      <ul class="svmenu-content-inner">
+        {% assign publishedPages = site.pages | where: 'show', 'true' %}
+        {% for page in publishedPages %}
+          <li class="svmenu-item"><div class="svmenu-item-inner"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></div></li>
+        {% endfor %}
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter">Twitter</a></div></li>
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile">GitHub</a></div></li>
+      </ul>
+    </div>
+  </nav>
+</aside>
