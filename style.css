@@ -8,6 +8,12 @@
   text-align: center;
 }
 
+.masthead h1 a {
+  font: inherit;
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .masthead h1 .logo {
   width: auto;
   height: 56px;
@@ -31,9 +37,13 @@
   color: #fff;
 }
 
+.footer .sign-off img { max-width: 80%; }
+
 .footer .social-links ul { text-align: right; }
 .footer .social-links ul a { font-size: 28px; }
 
 .websites { padding-bottom: 48px; }
 
 .blog-wrapper { margin-bottom: 32px; }
+
+.sitemap li { margin-bottom: 16px; }

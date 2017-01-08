@@ -3,8 +3,11 @@
 
 <!-- widget html -->
 <div class="blog-list posts">
-  <h6>Blog</h6>
-  {% for post in site.posts %}
-    {% include widgets/blog/post-item.html %}
-  {% endfor %}
+  <div class="section">
+    {% for post in site.posts %}
+      <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
+        {% include widgets/blog/post-item.html %}
+      </div>
+    {% endfor %}
+  </div>
 </div>
