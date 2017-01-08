@@ -140,4 +140,4 @@ class SVMenu {
   }
 }
 
-new SVMenu({ position: 'right' });
+new SVMenu({ position: 'left' });
