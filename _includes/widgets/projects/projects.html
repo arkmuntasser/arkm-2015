@@ -1,0 +1,13 @@
+<!-- widget css -->
+<link rel="stylesheet" href="{{ site.baseurl }}/widgets/blog/blog-list.css" />
+
+<!-- widget html -->
+<div class="blog-list posts">
+  <div class="section">
+    {% for project in site.projects %}
+      <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
+        {% include widgets/projects/project-item.html %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -2,16 +2,16 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/widgets/blog/blog-list.css" />
 
 <!-- widget html -->
-<h4>Recent Posts <span class="blinking-cursor">|</span></h4>
+<h4>Recent Projects <span class="blinking-cursor">|</span></h4>
 <div class="blog-list posts">
   <ul class="no-bullets">
-    {% for post in site.posts limit:3 %}
+    {% for project in site.projects limit:3 %}
       <li>
-        {% include widgets/blog/post-item.html %}
+        {% include widgets/projects/project-item.html %}
       </li>
     {% endfor %}
   </ul>
   <div class="blog-list-footer">
-    <a class="btn" href="{{ site.baseurl }}/blog">Read More Posts</a>
+    <a class="btn" href="{{ site.baseurl }}/projects">See More Projects</a>
   </div>
 </div>

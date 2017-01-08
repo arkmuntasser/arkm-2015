@@ -4,6 +4,7 @@
 
 .blog-list .post { padding: 16px 0; }
 
+.blog-list .post .title,
 .blog-list .post .title a {
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
@@ -23,6 +24,7 @@
   font-style: italic;
 }
 
+.blog-list .post .actions,
 .blog-list .post .tags {
   padding: 8px 0;
   border-top: 1px solid #ddd;
@@ -32,4 +34,19 @@
   font-size: 14px;
   font-style: italic;
   color: #004D40;
+}
+
+.blog-list .post .actions .action {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.blog-3-up .blog-list-footer { text-align: center; }
+
+.view-all-link-md { display: block; }
+.view-all-link-sm { display: none; }
+
+@media (max-width: 640px) {
+  .view-all-link-md { display: none; }
+  .view-all-link-sm { display: block; }
 }

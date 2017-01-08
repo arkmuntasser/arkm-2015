@@ -14,6 +14,34 @@ footer-links:
     icon: mail-alt
     url: mailto:arkmuntasser@gmail.com
 
+# Projects
+projects:
+  - name: happy-new-year
+    giturl: https://github.com/arkmuntasser/happy-new-year
+    puburl: https://arkmuntasser.github.io/happy-new-year
+    image: ''
+    description: 🎉 Happy New Year! - A simple countdown to the new year with fireworks! 🎉
+  - name: ui-components
+    giturl: https://github.com/arkmuntasser/ui-components
+    puburl:
+    image: ''
+    description: A collection/playground of UI components and experiments.
+  - name: css-triggers
+    giturl: https://github.com/arkmuntasser/css-triggers
+    puburl:
+    image: ''
+    description: An Atom package that lets you know if your css will trigger layout, paint and/or composite.
+  - name: before-after
+    giturl: https://github.com/arkmuntasser/before-after
+    puburl: http://arkmuntasser.github.io/before-after
+    image: ''
+    description: A progressively enhanced before and after image widget.
+  - name: meme
+    giturl: https://github.com/arkmuntasser/meme
+    puburl: http://arkmuntasser.github.io/meme
+    image: ''
+    description: A web app for making elegant shareable content using images, text, color, and branding.
+
 # Portfolio collection
 portfolio:
   - name: columbus

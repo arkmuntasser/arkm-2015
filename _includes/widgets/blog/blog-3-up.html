@@ -1,0 +1,26 @@
+<!-- widget css -->
+<link rel="stylesheet" href="{{ site.baseurl }}/widgets/blog/blog-list.css" />
+
+<!-- widget html -->
+<div class="section">
+  <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <h4>Recent Posts <span class="blinking-cursor">|</span></h4>
+  </div>
+  <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <a class="view-all-link-md right" href="{{ site.baseurl }}/blog">Read More Posts</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="blog-list blog-3-up posts">
+  <div class="section">
+    {% for post in site.posts limit:3 %}
+      <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        {% include widgets/blog/post-item.html %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="blog-list-footer view-all-link-sm">
+    <a class="btn" href="{{ site.baseurl }}/blog">Read More Posts</a>
+  </div>
+</div>

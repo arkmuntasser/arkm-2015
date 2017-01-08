@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2014-3-3
-title: You're up and running!
+title: The Fast and the Furious
 slug: youre-up-and-running
 excerpt: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
 tags: test demo prototype

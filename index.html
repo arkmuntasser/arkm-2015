@@ -4,7 +4,7 @@ layout: default
 
 {% include widgets/twitter-banner/twitter-banner.html %}
 
-<div class="blog-wrapper">
+<div class="projects-wrapper">
   <div class="container">
     <div class="section">
       <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -20,9 +20,17 @@ layout: default
         </p>
       </div>
       <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
-        {% include widgets/blog/blog-list.html %}
+
+
+        {% include widgets/projects/project-list.html %}
       </div>
     </div>
+  </div>
+</div>
+
+<div class="blog-wrapper">
+  <div class="container">
+    {% include widgets/blog/blog-3-up.html %}
   </div>
 </div>
 

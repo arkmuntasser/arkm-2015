@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2015-2-20
-title: 2 Test 2 Furious
+title: The Fate of the Furious
 slug: before-after
 excerpt: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
 tags: test demo

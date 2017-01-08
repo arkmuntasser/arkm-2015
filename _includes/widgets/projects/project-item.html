@@ -1,0 +1,26 @@
+<article class="post">
+  <div class="title">{{ project.name }}</div>
+  <div class="subtitle"><a href="{{ project.giturl }}" target="_blank" title="{{ project.name }} github repo">{{ project.giturl }}</a></div>
+
+  <div class="entry">
+    <p>
+      {{ project.description }}
+    </p>
+  </div>
+
+  <div class="actions">
+    <ul class="inline-list">
+      {% if project.giturl %}
+        <li class="action">
+          <a href="{{ project.giturl }}" target="_blank" title="{{ project.name }} github repo">View GitHub Repo</a>
+        </li>
+      {% endif %}
+
+      {% if project.puburl %}
+        <li class="action">
+          <a href="{{ project.puburl }}" target="_blank" title="{{ project.name }} website">View Project Website</a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+</article>
