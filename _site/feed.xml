@@ -1,9 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-01-08T16:07:21-07:00</updated><id>http://localhost:4000//</id><title type="html">arkmuntasser</title><subtitle>Just a super cool cat doin' some code stuff...</subtitle><entry><title type="html">The Fate of the Furious</title><link href="http://localhost:4000/blog/before-after/" rel="alternate" type="text/html" title="The Fate of the Furious" /><published>2015-02-20T00:00:00-07:00</published><updated>2015-02-20T00:00:00-07:00</updated><id>http://localhost:4000/blog/before-after</id><content type="html" xml:base="http://localhost:4000/blog/before-after/">&lt;p&gt;Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-01-10T20:31:39-07:00</updated><id>http://localhost:4000//</id><title type="html">arkmuntasser</title><subtitle>Just a super cool cat doin' some code stuff...</subtitle><entry><title type="html">Re: Redesign</title><link href="http://localhost:4000/blog/redesigning-my-site/" rel="alternate" type="text/html" title="Re&amp;#58; Redesign" /><published>2017-01-09T00:00:00-07:00</published><updated>2017-01-09T00:00:00-07:00</updated><id>http://localhost:4000/blog/redesigning-my-site</id><content type="html" xml:base="http://localhost:4000/blog/redesigning-my-site/">&lt;p&gt;This is not the first time I’ve tried having my own site as you might have guessed by my use of the word “redesign”. It is, however, the first time that I felt pride in my site. That’s not because it’s the most technically advanced site I know how to make with crazy animations, but because it’s the first to reflect me.&lt;/p&gt;
 
-&lt;p&gt;The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;</content><category term="test" /><category term="demo" /><summary type="html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</summary></entry><entry><title type="html">2 Test 2 Furious</title><link href="http://localhost:4000/blog/2-test-2-furious/" rel="alternate" type="text/html" title="2 Test 2 Furious" /><published>2015-02-20T00:00:00-07:00</published><updated>2015-02-20T00:00:00-07:00</updated><id>http://localhost:4000/blog/2-test-2-furious</id><content type="html" xml:base="http://localhost:4000/blog/2-test-2-furious/">&lt;p&gt;Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).&lt;/p&gt;
+&lt;p&gt;I’m not a designer by any means so my work leans on what I’ve seen others do and what I thought was cool at the time. That has always been true of my personal sites, but previous iterations felt very clinical or didn’t properly showcase me. And what is even the point of having a website if it doesn’t reflect and showcase you? So how did I get to having a site I’m proud of?&lt;/p&gt;
 
-&lt;p&gt;The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;</content><category term="test" /><category term="demo" /><summary type="html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</summary></entry><entry><title type="html">The Fast and the Furious</title><link href="http://localhost:4000/blog/youre-up-and-running/" rel="alternate" type="text/html" title="The Fast and the Furious" /><published>2014-03-03T00:00:00-07:00</published><updated>2014-03-03T00:00:00-07:00</updated><id>http://localhost:4000/blog/youre-up-and-running</id><content type="html" xml:base="http://localhost:4000/blog/youre-up-and-running/">&lt;p&gt;Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).&lt;/p&gt;
+&lt;div class=&quot;section&quot;&gt;
+  &lt;div class=&quot;col col-xs-12 col-sm-12 col-md-8 col-lg-8&quot;&gt;
+    &lt;p class=&quot;lead&quot;&gt;
+      &amp;hellip;I learned a lot of bad habits, copied a lot of code straight from StackOverflow, and thought all problems could be solved by jQuery&amp;hellip;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;</content><category term="test" /><category term="demo" /><category term="prototype" /><summary type="html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</summary></entry><entry><title type="html">The Fast and the Furious 3 - Tokyo Drift</title><link href="http://localhost:4000/blog/youre-up-and-running-again/" rel="alternate" type="text/html" title="The Fast and the Furious 3 - Tokyo Drift" /><published>2014-03-03T00:00:00-07:00</published><updated>2014-03-03T00:00:00-07:00</updated><id>http://localhost:4000/blog/youre-up-and-running-again</id><content type="html" xml:base="http://localhost:4000/blog/youre-up-and-running-again/">&lt;p&gt;Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).&lt;/p&gt;
+&lt;p&gt;First, I’m finally proud of myself as a developer. I have a BS in Computer Science, but when it comes to web development I am self-taught. That means I learned a lot of bad habits, copied a lot of code straight from StackOverflow, and thought all problems could be solved by jQuery. That is to say I was a bad developer. Clever enough to make a living off of it, sure, but I was very aware that I didn’t know as much as my peers. Still don’t in many respects, but I have a wealth of experience now  and  can present to a room of developers on topics such as creating performant animations on the web or progressive enhancement, take questions on it, and hold up just fine.&lt;/p&gt;
 
-&lt;p&gt;The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;</content><category term="test" /><category term="demo" /><category term="prototype" /><summary type="html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</summary></entry></feed>
+&lt;p&gt;Second, I ditched the frameworks. That’s not say that frameworks are bad, hardly, but I found that when I used them I relied on them to the point of them being a crutch. For a while I wouldn’t even think of starting anything without loading Bootstrap first. Bootstrap is fantastic! And &lt;a href=&quot;http://github.com/mdo&quot;&gt;@mdo&lt;/a&gt; is brilliant. But I found that I kept producing the same old “Bootstrap sites” you see/saw everywhere. So I ditched it. Yes, if you look at the CSS you’ll find a lot of elements similar to what you would find in Bootstrap or Foundation, but I wrote them. That kept me focused; I didn’t have all the bells and whistles so I didn’t build something in service of what Bootstrap offered, I built what was service of the content, in service of me. I only made what I need to accomplish achieve the look I was going for.&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+  &lt;div class=&quot;col col-xs-12 col-sm-12 col-md-4 col-lg-4&quot;&gt;&amp;nbsp;&lt;/div&gt;
+  &lt;div class=&quot;col col-xs-12 col-sm-12 col-md-8 col-lg-8&quot;&gt;
+    &lt;p class=&quot;lead&quot;&gt;
+      &amp;hellip;I didn't have all the bells and whistles so I didn't build something in service of what Bootstrap offered&amp;hellip;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Speaking of the look, I used to jump in with blocking out huge areas of what kind of elements I should have. This time I started at the bottom. Fonts. I tested a bunch of fonts until I landed on what felt right for me: Open Sans and Work Sans if you’re curious. Then I &lt;a href=&quot;/styles&quot;&gt;played with how all the different styles&lt;/a&gt; of text would play off each other.&lt;/p&gt;
+
+&lt;p&gt;From there I worked out a rough idea of the colors I wanted to use. I wanted something eye-catching that screamed to be looked at. So I went with neon-pink.&lt;/p&gt;
+
+&lt;p&gt;Then, I thought about what was one thing I could do to really give someone a sense of who I am? Immediately it was clear to me that I needed to involve my Twitter in some way. Thus the banner at the top of the homepage. Funny thing about it, it doesn’t technically use Twitter to power it. Twitter’s API doesn’t like to be used client-side and with this site being a Jekyll-powered GitHub page server-side wasn’t going to happen.&lt;/p&gt;
+
+&lt;p&gt;So I turned to good ol’ IFTTT for a solution. I set up a rule so that whenever I tweeted using trigger hashtag, my tweet would be entered into a Google Spreadsheet that I could then read from. Problem was there’s no good way to pull out the image url from a tweet in this way. I was determined to be able to post an image and some text and have it show up on my site. Turns out Instagram had exactly what I was looking for.&lt;/p&gt;
+
+&lt;p&gt;Same solution, IFTTT takes Instagram posts from my account with a trigger hashtag and puts them in spreadsheet. And for good measure, since I don’t really use Instagram all that much and don’t want to direct people to it, IFTTT also reposts to Twitter natively. Ta-dah!&lt;/p&gt;
+
+&lt;p&gt;Next, I narrowed down what content I wanted to show: my Twitter (most reflective of me personally), my GitHub repos that I’m most proud of, my blog, and finally a trimmed down portfolio. In that order.&lt;/p&gt;
+
+&lt;p&gt;I already explained why the Twitter banner is first, like, a couple short paragraphs ago. If you can’t remember, then you have a terrible memory.&lt;/p&gt;
+
+&lt;p&gt;I wanted my GitHub repos up top because they’re the code that I own. Not stuff I made while employed or contracted elsewhere. This is about me after all.&lt;/p&gt;
+
+&lt;p&gt;Next my blog. I don’t regularly blog. But I want to get into it. So I put it nearer the top as a way to force myself to use it. And I’m using it now, so it works! I’m so clever.&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+  &lt;div class=&quot;col col-xs-12 col-sm-12 col-md-8 col-lg-8&quot;&gt;
+    &lt;p class=&quot;lead&quot;&gt;
+      &amp;hellip;my biggest and most ambitious projects and others that were from when I was less capable&amp;hellip;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Lastly, my resume as it were. Save the best for last, right? It’s big and bold and filled with beautiful work. The work that I think defines me; some of my biggest and most ambitious projects and others that were from when I was less capable, but started being able to make a living doing web development.&lt;/p&gt;
+
+&lt;p&gt;And then I end-capped it with a sweet Cowboy Bebop reference. Once again, this is all about me, baby.&lt;/p&gt;
+
+&lt;p&gt;I could get deeper into the technical nitty-gritty details, but if you’re the type of person interested in that then I suspect you’ll have a more educational experience just inspecting everything.&lt;/p&gt;
+
+&lt;p&gt;Anyway, this post has gone on long enough.&lt;/p&gt;
+
+&lt;p&gt;See you space cowboy…&lt;/p&gt;</content><category term="redesign" /><category term="dev" /><category term="growth" /><category term="storytime" /><summary type="html">A story about a redesign, but also one of self-discovery</summary></entry><entry><title type="html">Resolutions For 2017</title><link href="http://localhost:4000/blog/resolutions-2017/" rel="alternate" type="text/html" title="Resolutions For 2017" /><published>2017-01-01T00:00:00-07:00</published><updated>2017-01-01T00:00:00-07:00</updated><id>http://localhost:4000/blog/resolutions-2017</id><content type="html" xml:base="http://localhost:4000/blog/resolutions-2017/">&lt;p&gt;Let’s keep things simple and right to the list.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Deliver more presentations&lt;/li&gt;
+  &lt;li&gt;Get in better shape for my wedding (and I guess for the rest of my life too?)
+    &lt;ul&gt;
+      &lt;li&gt;walk/run more&lt;/li&gt;
+      &lt;li&gt;join a gym and make use of it&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Get better at a11y&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I think that’s pretty doable for the year. I’ll check in periodically with updates on how this going and what if any I’ve accomplished.&lt;/p&gt;</content><category term="resolutions" /><category term="2017" /><summary type="html">Personal and professional goals for this coming year.</summary></entry><entry><title type="html">2 Test 2 Furious</title><link href="http://localhost:4000/blog/2-test-2-furious/" rel="alternate" type="text/html" title="2 Test 2 Furious" /><published>2015-02-20T00:00:00-07:00</published><updated>2015-02-20T00:00:00-07:00</updated><id>http://localhost:4000/blog/2-test-2-furious</id><content type="html" xml:base="http://localhost:4000/blog/2-test-2-furious/">&lt;p&gt;Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).&lt;/p&gt;
+
+&lt;p&gt;The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;</content><category term="test" /><category term="demo" /><summary type="html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</summary></entry></feed>

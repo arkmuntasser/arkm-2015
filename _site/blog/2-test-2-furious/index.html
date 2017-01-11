@@ -256,6 +256,8 @@ ol {
   margin-bottom: 16px;
 }
 
+ul ul { margin-bottom: 0; }
+
 .no-bullets {
   margin-left: 0;
   list-style: none;
@@ -348,7 +350,8 @@ blockquote {
 
 .block-item:nth-of-type(2n+1) { clear: both; }
 
-.page { padding: 64px 0; }
+.page,
+.post { padding: 64px 0; }
 
 .flex-video {
   position: relative;
@@ -364,6 +367,8 @@ blockquote {
   width: 100%;
   height: 100%;
 }
+
+.sep { margin-bottom: 16px; }
 
     </style>
   </head>
@@ -393,8 +398,8 @@ blockquote {
         
           <li class="svmenu-item"><div class="svmenu-item-inner"><a href="/projects/" title="Projects">Projects</a></div></li>
         
-        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter">Twitter</a></div></li>
-        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile">GitHub</a></div></li>
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter" rel="noopener">Twitter</a></div></li>
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile" rel="noopener">GitHub</a></div></li>
       </ul>
     </div>
   </nav>
@@ -513,7 +518,7 @@ class SVMenu {
     } else {
       translateX = Math.min(0, this.currentX - this.startX);
     }
-    this.sideNavContainerEl.style.transform = `translateX(${translateX}px)`;
+    this.sideNavContainerEl.style.transform = 'translateX(' + translateX + 'px)';
   }
 
   expandSubMenu (evt) {
@@ -550,16 +555,29 @@ new SVMenu({ position: 'left' });
     <div class="container">
   <article class="post">
     <h1>2 Test 2 Furious</h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
 
-    <div class="entry">
-      <p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</p>
+    <div class="section">
+      <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <div class="entry">
+          <p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</p>
 
 <p>The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub.</p>
 
-    </div>
+        </div>
 
-    <div class="date">
-      Written on February 20, 2015
+        <div class="tags">
+          
+            <span class="tag">#test</span>
+          
+            <span class="tag">#demo</span>
+          
+        </div>
+
+        <div class="date subtitle">Written on February 20, 2015</div>
+      </div>
+
+      
     </div>
   </article>
 </div>
@@ -575,15 +593,15 @@ new SVMenu({ position: 'left' });
       <ul class="inline-list">
         
           <li>
-            <a href="https://twitter.com/arkmuntasser" target="_blank"><i class="icon-twitter"></i></a>
+            <a href="https://twitter.com/arkmuntasser" target="_blank" rel="noopener"><i class="icon-twitter"></i></a>
           </li>
         
           <li>
-            <a href="https://github.com/arkmuntasser" target="_blank"><i class="icon-github-circled"></i></a>
+            <a href="https://github.com/arkmuntasser" target="_blank" rel="noopener"><i class="icon-github-circled"></i></a>
           </li>
         
           <li>
-            <a href="mailto:arkmuntasser@gmail.com" target="_blank"><i class="icon-mail-alt"></i></a>
+            <a href="mailto:arkmuntasser@gmail.com" target="_blank" rel="noopener"><i class="icon-mail-alt"></i></a>
           </li>
         
       </ul>

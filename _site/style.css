@@ -3,6 +3,8 @@
   background-color: #fff;
 }
 
+.masthead .container { padding: 0 75px; }
+
 .masthead h1 {
   margin: 0;
   padding: 8px;
@@ -21,6 +23,12 @@
   width: auto;
   height: 56px;
   vertical-align: middle;
+}
+
+@media (max-width: 640px) {
+  .masthead .container { padding: 0 16px 0 64px; }
+  .masthead h1 { font-size: 26px; }
+  .masthead h1 .logo { height: 43px; }
 }
 
 .footer {
@@ -43,7 +51,10 @@
 .footer .sign-off img { max-width: 80%; }
 
 .footer .social-links ul { text-align: right; }
-.footer .social-links ul a { font-size: 28px; }
+.footer .social-links ul a {
+  font-size: 28px;
+  text-decoration: none;
+}
 
 .websites { padding-bottom: 48px; }
 
@@ -55,3 +66,32 @@
 }
 
 .sitemap li { margin-bottom: 16px; }
+
+.post h1 { margin-bottom: 8px; }
+
+.post .entry { padding: 16px 0; }
+
+.post .title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.post .subtitle {
+  margin-bottom: 32px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.post .tags {
+  padding: 8px 0;
+  border-top: 1px solid #ddd;
+}
+
+.post .tags .tag {
+  font-size: 14px;
+  font-style: italic;
+  color: #4CAF50;
+}

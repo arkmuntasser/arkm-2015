@@ -242,6 +242,8 @@ ol {
   margin-bottom: 16px;
 }
 
+ul ul { margin-bottom: 0; }
+
 .no-bullets {
   margin-left: 0;
   list-style: none;
@@ -334,7 +336,8 @@ blockquote {
 
 .block-item:nth-of-type(2n+1) { clear: both; }
 
-.page { padding: 64px 0; }
+.page,
+.post { padding: 64px 0; }
 
 .flex-video {
   position: relative;
@@ -350,6 +353,8 @@ blockquote {
   width: 100%;
   height: 100%;
 }
+
+.sep { margin-bottom: 16px; }
 
     </style>
   </head>
@@ -379,8 +384,8 @@ blockquote {
         
           <li class="svmenu-item"><div class="svmenu-item-inner"><a href="/projects/" title="Projects">Projects</a></div></li>
         
-        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter">Twitter</a></div></li>
-        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile">GitHub</a></div></li>
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter" rel="noopener">Twitter</a></div></li>
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile" rel="noopener">GitHub</a></div></li>
       </ul>
     </div>
   </nav>
@@ -499,7 +504,7 @@ class SVMenu {
     } else {
       translateX = Math.min(0, this.currentX - this.startX);
     }
-    this.sideNavContainerEl.style.transform = `translateX(${translateX}px)`;
+    this.sideNavContainerEl.style.transform = 'translateX(' + translateX + 'px)';
   }
 
   expandSubMenu (evt) {
@@ -547,7 +552,7 @@ new SVMenu({ position: 'left' });
     </div>
   </div>
   <div class="container twitter-byline-container">
-    <a href="https://twitter.com/arkmuntasser" target="_blank">
+    <a href="https://twitter.com/arkmuntasser" target="_blank" rel="noopener">
       <span class="icon-twitter"></span><span class="username">@arkmuntasser</span>
     </a>
   </div>
@@ -615,7 +620,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <li>
         <article class="post">
   <div class="title">happy-new-year</div>
-  <div class="subtitle"><a href="https://github.com/arkmuntasser/happy-new-year" target="_blank" title="happy-new-year github repo">https://github.com/arkmuntasser/happy-new-year</a></div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/happy-new-year" target="_blank" title="happy-new-year github repo" rel="noopener">https://github.com/arkmuntasser/happy-new-year</a></div>
 
   <div class="entry">
     <p>
@@ -627,13 +632,13 @@ document.addEventListener('DOMContentLoaded', function() {
     <ul class="inline-list">
       
         <li class="action">
-          <a href="https://github.com/arkmuntasser/happy-new-year" target="_blank" title="happy-new-year github repo">View GitHub Repo</a>
+          <a href="https://github.com/arkmuntasser/happy-new-year" target="_blank" title="happy-new-year github repo" rel="noopener">View GitHub Repo</a>
         </li>
       
 
       
         <li class="action">
-          <a href="https://arkmuntasser.github.io/happy-new-year" target="_blank" title="happy-new-year website">View Project Website</a>
+          <a href="https://arkmuntasser.github.io/happy-new-year" target="_blank" title="happy-new-year website" rel="noopener">View Project Website</a>
         </li>
       
     </ul>
@@ -645,7 +650,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <li>
         <article class="post">
   <div class="title">ui-components</div>
-  <div class="subtitle"><a href="https://github.com/arkmuntasser/ui-components" target="_blank" title="ui-components github repo">https://github.com/arkmuntasser/ui-components</a></div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/ui-components" target="_blank" title="ui-components github repo" rel="noopener">https://github.com/arkmuntasser/ui-components</a></div>
 
   <div class="entry">
     <p>
@@ -657,7 +662,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <ul class="inline-list">
       
         <li class="action">
-          <a href="https://github.com/arkmuntasser/ui-components" target="_blank" title="ui-components github repo">View GitHub Repo</a>
+          <a href="https://github.com/arkmuntasser/ui-components" target="_blank" title="ui-components github repo" rel="noopener">View GitHub Repo</a>
         </li>
       
 
@@ -671,7 +676,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <li>
         <article class="post">
   <div class="title">css-triggers</div>
-  <div class="subtitle"><a href="https://github.com/arkmuntasser/css-triggers" target="_blank" title="css-triggers github repo">https://github.com/arkmuntasser/css-triggers</a></div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/css-triggers" target="_blank" title="css-triggers github repo" rel="noopener">https://github.com/arkmuntasser/css-triggers</a></div>
 
   <div class="entry">
     <p>
@@ -683,7 +688,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <ul class="inline-list">
       
         <li class="action">
-          <a href="https://github.com/arkmuntasser/css-triggers" target="_blank" title="css-triggers github repo">View GitHub Repo</a>
+          <a href="https://github.com/arkmuntasser/css-triggers" target="_blank" title="css-triggers github repo" rel="noopener">View GitHub Repo</a>
         </li>
       
 
@@ -726,20 +731,46 @@ document.addEventListener('DOMContentLoaded', function() {
     
       <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <article class="post">
-  <div class="title"><a href="/blog/before-after/">The Fate of the Furious <span class="link-arrow">&#10095;</span></a></div>
-  <div class="subtitle">February 20, 2015</div>
+  <div class="title"><a href="/blog/redesigning-my-site/">Re&#58; Redesign <span class="link-arrow">&#10095;</span></a></div>
+  <div class="subtitle">January  9, 2017</div>
 
   <div class="entry">
     <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/blog/before-after/" class="read-more">Read More</a>
+      A story about a redesign, but also one of self-discovery&hellip; <a href="/blog/redesigning-my-site/" class="read-more">Read More</a>
     </p>
   </div>
 
   <div class="tags">
     
-      <span class="tag">#test</span>
+      <span class="tag">#redesign</span>
     
-      <span class="tag">#demo</span>
+      <span class="tag">#dev</span>
+    
+      <span class="tag">#growth</span>
+    
+      <span class="tag">#storytime</span>
+    
+  </div>
+</article>
+
+      </div>
+    
+      <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="post">
+  <div class="title"><a href="/blog/resolutions-2017/">Resolutions For 2017 <span class="link-arrow">&#10095;</span></a></div>
+  <div class="subtitle">January  1, 2017</div>
+
+  <div class="entry">
+    <p>
+      Personal and professional goals for this coming year.&hellip; <a href="/blog/resolutions-2017/" class="read-more">Read More</a>
+    </p>
+  </div>
+
+  <div class="tags">
+    
+      <span class="tag">#resolutions</span>
+    
+      <span class="tag">#2017</span>
     
   </div>
 </article>
@@ -753,7 +784,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   <div class="entry">
     <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/blog/2-test-2-furious/" class="read-more">Read More</a>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.&hellip; <a href="/blog/2-test-2-furious/" class="read-more">Read More</a>
     </p>
   </div>
 
@@ -762,30 +793,6 @@ document.addEventListener('DOMContentLoaded', function() {
       <span class="tag">#test</span>
     
       <span class="tag">#demo</span>
-    
-  </div>
-</article>
-
-      </div>
-    
-      <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <article class="post">
-  <div class="title"><a href="/blog/youre-up-and-running/">The Fast and the Furious <span class="link-arrow">&#10095;</span></a></div>
-  <div class="subtitle">March  3, 2014</div>
-
-  <div class="entry">
-    <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="/blog/youre-up-and-running/" class="read-more">Read More</a>
-    </p>
-  </div>
-
-  <div class="tags">
-    
-      <span class="tag">#test</span>
-    
-      <span class="tag">#demo</span>
-    
-      <span class="tag">#prototype</span>
     
   </div>
 </article>
@@ -821,12 +828,12 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="item-text">
               <div class="title">Innovation Norway</div>
               <div class="subtitle">
-                <a href="http://www.visitnorway.com" target="_blank">www.visitnorway.com</a>
+                <a href="http://www.visitnorway.com" target="_blank" rel="noopener">www.visitnorway.com</a>
               </div>
               <p class="description">
                 Plan your holiday in Norway with free guides and videos. Learn about fjords, northern lights, midnight sun, where to stay, walking, fishing and more.
               </p>
-              <a class="btn btn-block btn-inverse" href="http://www.visitnorway.com" target="_blank">View Site</a>
+              <a class="btn btn-block btn-inverse" href="http://www.visitnorway.com" target="_blank" rel="noopener">View Site</a>
             </div>
           </div>
         </div>
@@ -845,12 +852,12 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="item-text">
               <div class="title">Visit Denver</div>
               <div class="subtitle">
-                <a href="http://www.denver.org" target="_blank">www.denver.org</a>
+                <a href="http://www.denver.org" target="_blank" rel="noopener">www.denver.org</a>
               </div>
               <p class="description">
                 Denver's Convention & Visitors Bureau invites you to explore things to do, hotels, restaurants & more in Denver. Download our Denver Visitors Guide!
               </p>
-              <a class="btn btn-block btn-inverse" href="http://www.denver.org" target="_blank">View Site</a>
+              <a class="btn btn-block btn-inverse" href="http://www.denver.org" target="_blank" rel="noopener">View Site</a>
             </div>
           </div>
         </div>
@@ -869,12 +876,12 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="item-text">
               <div class="title">Travel Kansas</div>
               <div class="subtitle">
-                <a href="http://www.travelks.com" target="_blank">www.travelks.com</a>
+                <a href="http://www.travelks.com" target="_blank" rel="noopener">www.travelks.com</a>
               </div>
               <p class="description">
                 Get All of the Info You Need, From Dining, Shopping, Hotels, Camping, Attractions & Things to Do. We Have What You're Looking For. Visit Today!
               </p>
-              <a class="btn btn-block btn-inverse" href="http://www.travelks.com" target="_blank">View Site</a>
+              <a class="btn btn-block btn-inverse" href="http://www.travelks.com" target="_blank" rel="noopener">View Site</a>
             </div>
           </div>
         </div>
@@ -927,7 +934,7 @@ document.addEventListener('DOMContentLoaded', function() {
         Experience Columbus
       </div>
       <div class="subtitle">
-        <a href="http://experiencecolumbus.com" target="_blank">http://experiencecolumbus.com</a>
+        <a href="http://experiencecolumbus.com" target="_blank" rel="noopener">http://experiencecolumbus.com</a>
       </div>
       <p class="description">
         Come experience Columbus, Ohio and see what makes us a great city to visit. Find things to do, hotels, restaurants, events and visitor travel information.
@@ -940,7 +947,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
     <div class="imagebox-footer">
-      <a href="http://experiencecolumbus.com" target="_blank">Visit Site</a>
+      <a href="http://experiencecolumbus.com" target="_blank" rel="noopener">Visit Site</a>
       <div class="clear"></div>
     </div>
   </div>
@@ -956,7 +963,7 @@ document.addEventListener('DOMContentLoaded', function() {
         Rooster Teeth
       </div>
       <div class="subtitle">
-        <a href="http://roosterteeth.com" target="_blank">http://roosterteeth.com</a>
+        <a href="http://roosterteeth.com" target="_blank" rel="noopener">http://roosterteeth.com</a>
       </div>
       <p class="description">
         Rooster Teeth is a production studio based in Austin, TX responsible for some of the most watched and celebrated online series ever.
@@ -973,7 +980,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
     <div class="imagebox-footer">
-      <a href="http://roosterteeth.com" target="_blank">Visit Site</a>
+      <a href="http://roosterteeth.com" target="_blank" rel="noopener">Visit Site</a>
       <div class="clear"></div>
     </div>
   </div>
@@ -989,7 +996,7 @@ document.addEventListener('DOMContentLoaded', function() {
         Shop SWS
       </div>
       <div class="subtitle">
-        <a href="http://shopsws.com" target="_blank">http://shopsws.com</a>
+        <a href="http://shopsws.com" target="_blank" rel="noopener">http://shopsws.com</a>
       </div>
       <p class="description">
         SWS is dedicated to providing the highest quality computer sales and service to southern Arizona's business and private communities.
@@ -1010,7 +1017,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
     <div class="imagebox-footer">
-      <a href="http://shopsws.com" target="_blank">Visit Site</a>
+      <a href="http://shopsws.com" target="_blank" rel="noopener">Visit Site</a>
       <div class="clear"></div>
     </div>
   </div>
@@ -1026,7 +1033,7 @@ document.addEventListener('DOMContentLoaded', function() {
         Northeast Computer Repair
       </div>
       <div class="subtitle">
-        <a href="http://northeastcr.com" target="_blank">http://northeastcr.com</a>
+        <a href="http://northeastcr.com" target="_blank" rel="noopener">http://northeastcr.com</a>
       </div>
       <p class="description">
         At Northeast Computer Repair we take a different approach to your digital needs. Our principles are honesty, integrity, expertise, and promptness.
@@ -1045,7 +1052,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
     <div class="imagebox-footer">
-      <a href="http://northeastcr.com" target="_blank">Visit Site</a>
+      <a href="http://northeastcr.com" target="_blank" rel="noopener">Visit Site</a>
       <div class="clear"></div>
     </div>
   </div>
@@ -1073,15 +1080,15 @@ document.addEventListener('DOMContentLoaded', function() {
       <ul class="inline-list">
         
           <li>
-            <a href="https://twitter.com/arkmuntasser" target="_blank"><i class="icon-twitter"></i></a>
+            <a href="https://twitter.com/arkmuntasser" target="_blank" rel="noopener"><i class="icon-twitter"></i></a>
           </li>
         
           <li>
-            <a href="https://github.com/arkmuntasser" target="_blank"><i class="icon-github-circled"></i></a>
+            <a href="https://github.com/arkmuntasser" target="_blank" rel="noopener"><i class="icon-github-circled"></i></a>
           </li>
         
           <li>
-            <a href="mailto:arkmuntasser@gmail.com" target="_blank"><i class="icon-mail-alt"></i></a>
+            <a href="mailto:arkmuntasser@gmail.com" target="_blank" rel="noopener"><i class="icon-mail-alt"></i></a>
           </li>
         
       </ul>

@@ -10,11 +10,11 @@
 
   <meta name="twitter:site" content="@arkmuntasser">
   <meta name="twitter:creator" content="@arkmuntasser">
-  <meta name="twitter:title" content="The Fate of the Furious">
-  <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.">
+  <meta name="twitter:title" content="Resolutions For 2017">
+  <meta name="twitter:description" content="Personal and professional goals for this coming year.">
 
-  <meta itemprop="name" content="The Fate of the Furious">
-  <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.">
+  <meta itemprop="name" content="Resolutions For 2017">
+  <meta itemprop="description" content="Personal and professional goals for this coming year.">
 
   
 
@@ -29,7 +29,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0080">
     <meta name="theme-color" content="#ffffff">
 
-    <title>The Fate of the Furious – arkmuntasser – Just a super cool cat doin' some code stuff...</title>
+    <title>Resolutions For 2017 – arkmuntasser – Just a super cool cat doin' some code stuff...</title>
 
     <link rel="alternate" type="application/rss+xml" title="arkmuntasser - Just a super cool cat doin' some code stuff..." href="/feed.xml" />
 
@@ -256,6 +256,8 @@ ol {
   margin-bottom: 16px;
 }
 
+ul ul { margin-bottom: 0; }
+
 .no-bullets {
   margin-left: 0;
   list-style: none;
@@ -348,7 +350,8 @@ blockquote {
 
 .block-item:nth-of-type(2n+1) { clear: both; }
 
-.page { padding: 64px 0; }
+.page,
+.post { padding: 64px 0; }
 
 .flex-video {
   position: relative;
@@ -364,6 +367,8 @@ blockquote {
   width: 100%;
   height: 100%;
 }
+
+.sep { margin-bottom: 16px; }
 
     </style>
   </head>
@@ -393,8 +398,8 @@ blockquote {
         
           <li class="svmenu-item"><div class="svmenu-item-inner"><a href="/projects/" title="Projects">Projects</a></div></li>
         
-        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter">Twitter</a></div></li>
-        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile">GitHub</a></div></li>
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter" rel="noopener">Twitter</a></div></li>
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile" rel="noopener">GitHub</a></div></li>
       </ul>
     </div>
   </nav>
@@ -513,7 +518,7 @@ class SVMenu {
     } else {
       translateX = Math.min(0, this.currentX - this.startX);
     }
-    this.sideNavContainerEl.style.transform = `translateX(${translateX}px)`;
+    this.sideNavContainerEl.style.transform = 'translateX(' + translateX + 'px)';
   }
 
   expandSubMenu (evt) {
@@ -549,17 +554,41 @@ new SVMenu({ position: 'left' });
 
     <div class="container">
   <article class="post">
-    <h1>The Fate of the Furious</h1>
+    <h1>Resolutions For 2017</h1>
+    <p class="lead">Personal and professional goals for this coming year.</p>
 
-    <div class="entry">
-      <p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</p>
+    <div class="section">
+      <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <div class="entry">
+          <p>Let’s keep things simple and right to the list.</p>
 
-<p>The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub.</p>
+<ul>
+  <li>Deliver more presentations</li>
+  <li>Get in better shape for my wedding (and I guess for the rest of my life too?)
+    <ul>
+      <li>walk/run more</li>
+      <li>join a gym and make use of it</li>
+    </ul>
+  </li>
+  <li>Get better at a11y</li>
+</ul>
 
-    </div>
+<p>I think that’s pretty doable for the year. I’ll check in periodically with updates on how this going and what if any I’ve accomplished.</p>
 
-    <div class="date">
-      Written on February 20, 2015
+        </div>
+
+        <div class="tags">
+          
+            <span class="tag">#resolutions</span>
+          
+            <span class="tag">#2017</span>
+          
+        </div>
+
+        <div class="date subtitle">Written on January  1, 2017</div>
+      </div>
+
+      
     </div>
   </article>
 </div>
@@ -575,15 +604,15 @@ new SVMenu({ position: 'left' });
       <ul class="inline-list">
         
           <li>
-            <a href="https://twitter.com/arkmuntasser" target="_blank"><i class="icon-twitter"></i></a>
+            <a href="https://twitter.com/arkmuntasser" target="_blank" rel="noopener"><i class="icon-twitter"></i></a>
           </li>
         
           <li>
-            <a href="https://github.com/arkmuntasser" target="_blank"><i class="icon-github-circled"></i></a>
+            <a href="https://github.com/arkmuntasser" target="_blank" rel="noopener"><i class="icon-github-circled"></i></a>
           </li>
         
           <li>
-            <a href="mailto:arkmuntasser@gmail.com" target="_blank"><i class="icon-mail-alt"></i></a>
+            <a href="mailto:arkmuntasser@gmail.com" target="_blank" rel="noopener"><i class="icon-mail-alt"></i></a>
           </li>
         
       </ul>

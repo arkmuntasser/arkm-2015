@@ -111,7 +111,7 @@ class SVMenu {
     } else {
       translateX = Math.min(0, this.currentX - this.startX);
     }
-    this.sideNavContainerEl.style.transform = `translateX(${translateX}px)`;
+    this.sideNavContainerEl.style.transform = 'translateX(' + translateX + 'px)';
   }
 
   expandSubMenu (evt) {

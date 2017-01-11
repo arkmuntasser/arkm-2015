@@ -256,6 +256,8 @@ ol {
   margin-bottom: 16px;
 }
 
+ul ul { margin-bottom: 0; }
+
 .no-bullets {
   margin-left: 0;
   list-style: none;
@@ -348,7 +350,8 @@ blockquote {
 
 .block-item:nth-of-type(2n+1) { clear: both; }
 
-.page { padding: 64px 0; }
+.page,
+.post { padding: 64px 0; }
 
 .flex-video {
   position: relative;
@@ -364,6 +367,8 @@ blockquote {
   width: 100%;
   height: 100%;
 }
+
+.sep { margin-bottom: 16px; }
 
     </style>
   </head>
@@ -393,8 +398,8 @@ blockquote {
         
           <li class="svmenu-item"><div class="svmenu-item-inner"><a href="/projects/" title="Projects">Projects</a></div></li>
         
-        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter">Twitter</a></div></li>
-        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile">GitHub</a></div></li>
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://twitter.com/arkmuntasser" target="_blank" title="Amir's Twitter" rel="noopener">Twitter</a></div></li>
+        <li class="svmenu-item"><div class="svmenu-item-inner"><a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile" rel="noopener">GitHub</a></div></li>
       </ul>
     </div>
   </nav>
@@ -513,7 +518,7 @@ class SVMenu {
     } else {
       translateX = Math.min(0, this.currentX - this.startX);
     }
-    this.sideNavContainerEl.style.transform = `translateX(${translateX}px)`;
+    this.sideNavContainerEl.style.transform = 'translateX(' + translateX + 'px)';
   }
 
   expandSubMenu (evt) {
@@ -556,7 +561,7 @@ new SVMenu({ position: 'left' });
   This is a list of my favorite personal projects I'm working on. They are mostly little tests of ideas I've had or something I made to learn/practive something I read about. There are by no means meant to be production ready for anything so please do not use them as such without properly testing.
 </p>
 <p>
-  This is also not an exhaustive list of my personal projects, you can find that over on my <a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile">github profile</a>.
+  This is also not an exhaustive list of my personal projects, you can find that over on my <a href="http://github.com/arkmuntasser" target="_blank" title="Amir's GitHub profile" rel="noopener">github profile</a>.
 </p>
 
 <!-- widget css -->
@@ -569,7 +574,7 @@ new SVMenu({ position: 'left' });
       <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
         <article class="post">
   <div class="title">happy-new-year</div>
-  <div class="subtitle"><a href="https://github.com/arkmuntasser/happy-new-year" target="_blank" title="happy-new-year github repo">https://github.com/arkmuntasser/happy-new-year</a></div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/happy-new-year" target="_blank" title="happy-new-year github repo" rel="noopener">https://github.com/arkmuntasser/happy-new-year</a></div>
 
   <div class="entry">
     <p>
@@ -581,13 +586,13 @@ new SVMenu({ position: 'left' });
     <ul class="inline-list">
       
         <li class="action">
-          <a href="https://github.com/arkmuntasser/happy-new-year" target="_blank" title="happy-new-year github repo">View GitHub Repo</a>
+          <a href="https://github.com/arkmuntasser/happy-new-year" target="_blank" title="happy-new-year github repo" rel="noopener">View GitHub Repo</a>
         </li>
       
 
       
         <li class="action">
-          <a href="https://arkmuntasser.github.io/happy-new-year" target="_blank" title="happy-new-year website">View Project Website</a>
+          <a href="https://arkmuntasser.github.io/happy-new-year" target="_blank" title="happy-new-year website" rel="noopener">View Project Website</a>
         </li>
       
     </ul>
@@ -599,7 +604,7 @@ new SVMenu({ position: 'left' });
       <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
         <article class="post">
   <div class="title">ui-components</div>
-  <div class="subtitle"><a href="https://github.com/arkmuntasser/ui-components" target="_blank" title="ui-components github repo">https://github.com/arkmuntasser/ui-components</a></div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/ui-components" target="_blank" title="ui-components github repo" rel="noopener">https://github.com/arkmuntasser/ui-components</a></div>
 
   <div class="entry">
     <p>
@@ -611,7 +616,7 @@ new SVMenu({ position: 'left' });
     <ul class="inline-list">
       
         <li class="action">
-          <a href="https://github.com/arkmuntasser/ui-components" target="_blank" title="ui-components github repo">View GitHub Repo</a>
+          <a href="https://github.com/arkmuntasser/ui-components" target="_blank" title="ui-components github repo" rel="noopener">View GitHub Repo</a>
         </li>
       
 
@@ -625,7 +630,7 @@ new SVMenu({ position: 'left' });
       <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
         <article class="post">
   <div class="title">css-triggers</div>
-  <div class="subtitle"><a href="https://github.com/arkmuntasser/css-triggers" target="_blank" title="css-triggers github repo">https://github.com/arkmuntasser/css-triggers</a></div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/css-triggers" target="_blank" title="css-triggers github repo" rel="noopener">https://github.com/arkmuntasser/css-triggers</a></div>
 
   <div class="entry">
     <p>
@@ -637,7 +642,7 @@ new SVMenu({ position: 'left' });
     <ul class="inline-list">
       
         <li class="action">
-          <a href="https://github.com/arkmuntasser/css-triggers" target="_blank" title="css-triggers github repo">View GitHub Repo</a>
+          <a href="https://github.com/arkmuntasser/css-triggers" target="_blank" title="css-triggers github repo" rel="noopener">View GitHub Repo</a>
         </li>
       
 
@@ -651,7 +656,7 @@ new SVMenu({ position: 'left' });
       <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
         <article class="post">
   <div class="title">before-after</div>
-  <div class="subtitle"><a href="https://github.com/arkmuntasser/before-after" target="_blank" title="before-after github repo">https://github.com/arkmuntasser/before-after</a></div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/before-after" target="_blank" title="before-after github repo" rel="noopener">https://github.com/arkmuntasser/before-after</a></div>
 
   <div class="entry">
     <p>
@@ -663,13 +668,13 @@ new SVMenu({ position: 'left' });
     <ul class="inline-list">
       
         <li class="action">
-          <a href="https://github.com/arkmuntasser/before-after" target="_blank" title="before-after github repo">View GitHub Repo</a>
+          <a href="https://github.com/arkmuntasser/before-after" target="_blank" title="before-after github repo" rel="noopener">View GitHub Repo</a>
         </li>
       
 
       
         <li class="action">
-          <a href="http://arkmuntasser.github.io/before-after" target="_blank" title="before-after website">View Project Website</a>
+          <a href="http://arkmuntasser.github.io/before-after" target="_blank" title="before-after website" rel="noopener">View Project Website</a>
         </li>
       
     </ul>
@@ -681,7 +686,7 @@ new SVMenu({ position: 'left' });
       <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
         <article class="post">
   <div class="title">meme</div>
-  <div class="subtitle"><a href="https://github.com/arkmuntasser/meme" target="_blank" title="meme github repo">https://github.com/arkmuntasser/meme</a></div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/meme" target="_blank" title="meme github repo" rel="noopener">https://github.com/arkmuntasser/meme</a></div>
 
   <div class="entry">
     <p>
@@ -693,13 +698,13 @@ new SVMenu({ position: 'left' });
     <ul class="inline-list">
       
         <li class="action">
-          <a href="https://github.com/arkmuntasser/meme" target="_blank" title="meme github repo">View GitHub Repo</a>
+          <a href="https://github.com/arkmuntasser/meme" target="_blank" title="meme github repo" rel="noopener">View GitHub Repo</a>
         </li>
       
 
       
         <li class="action">
-          <a href="http://arkmuntasser.github.io/meme" target="_blank" title="meme website">View Project Website</a>
+          <a href="http://arkmuntasser.github.io/meme" target="_blank" title="meme website" rel="noopener">View Project Website</a>
         </li>
       
     </ul>
@@ -727,15 +732,15 @@ new SVMenu({ position: 'left' });
       <ul class="inline-list">
         
           <li>
-            <a href="https://twitter.com/arkmuntasser" target="_blank"><i class="icon-twitter"></i></a>
+            <a href="https://twitter.com/arkmuntasser" target="_blank" rel="noopener"><i class="icon-twitter"></i></a>
           </li>
         
           <li>
-            <a href="https://github.com/arkmuntasser" target="_blank"><i class="icon-github-circled"></i></a>
+            <a href="https://github.com/arkmuntasser" target="_blank" rel="noopener"><i class="icon-github-circled"></i></a>
           </li>
         
           <li>
-            <a href="mailto:arkmuntasser@gmail.com" target="_blank"><i class="icon-mail-alt"></i></a>
+            <a href="mailto:arkmuntasser@gmail.com" target="_blank" rel="noopener"><i class="icon-mail-alt"></i></a>
           </li>
         
       </ul>
