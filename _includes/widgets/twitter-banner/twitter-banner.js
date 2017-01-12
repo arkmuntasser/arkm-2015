@@ -20,6 +20,9 @@ function showInfo(data, tabletop) {
   var caption = data[0].text.replace(' #ark', '');
   bannerEl.querySelector('[data-social-banner-caption]').innerHTML = caption;
   bannerEl.querySelector('[data-social-banner-date]').innerHTML = data[0].date.toLowerCase().split(' at ')[0];
+
+  bannerEl.style.opacity = 1;
+  bannerEl.style.pointerEvents = "all";
 }
 
 document.addEventListener('DOMContentLoaded', function() {

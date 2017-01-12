@@ -22,17 +22,34 @@ layout: default
         <div class="date subtitle">Written on {{ page.date | date: "%B %e, %Y" }}</div>
       </div>
 
-      {% if page.music_title %}
-        <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <h5>Musical Accompaniment</h5>
+      <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        {% if page.images %}
+          <ul>
+            {% for image in page.images %}
+              <li>
+                {{ image }}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
 
-          <div class="music">
-            <div class="title">{{ page.music_title }}</div>
-            <div class="subtitle">{{ page.music_artist }}</div>
-            <a class="btn" href="{{ page.music_link }}" target="_blank" title="{{ page.music_title }} YouTube link" rel="noopener">Play Song - YouTube</a>
-          </div>
-        </div>
-      {% endif %}
+        {% if page.music %}
+          {% for music in page.music %}
+            <h5>#NowPlaying</h5>
+            <div class="now-playing">
+              <div class="music">
+                <div class="now-playing-text">
+                  <div class="title">{{ music.title }}</div>
+                  <div class="subtitle">{{ music.artist }}</div>
+                </div>
+                <div class="now-playing-footer">
+                  <a href="{{ music.link }}" target="_blank" title="{{ music.title }} YouTube link" rel="noopener">Play Song - YouTube</a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
     </div>
   </article>
 </div>

@@ -5,35 +5,27 @@ title: Re&#58; Redesign
 slug: redesigning-my-site
 excerpt: A story about a redesign, but also one of self-discovery
 tags: redesign dev growth storytime
-music_title: Love Like You
-music_artist: Aivi & Surasshu feat. Rebecca Sugar
-music_link: https://www.youtube.com/watch?v=clJk8a5q1Lo
+music:
+  - title: Love Like You
+    artist: Aivi & Surasshu feat. Rebecca Sugar
+    link: https://www.youtube.com/watch?v=clJk8a5q1Lo
 ---
 
 This is not the first time I've tried having my own site as you might have guessed by my use of the word "redesign". It is, however, the first time that I felt pride in my site. That's not because it's the most technically advanced site I know how to make with crazy animations, but because it's the first to reflect me.
 
 I'm not a designer by any means so my work leans on what I've seen others do and what I thought was cool at the time. That has always been true of my personal sites, but previous iterations felt very clinical or didn't properly showcase me. And what is even the point of having a website if it doesn't reflect and showcase you? So how did I get to having a site I'm proud of?
 
-<div class="section">
-  <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
-    <p class="lead">
-      &hellip;I learned a lot of bad habits, copied a lot of code straight from StackOverflow, and thought all problems could be solved by jQuery&hellip;
-    </p>
-  </div>
-</div>
+<p class="lead">
+  &hellip;I learned a lot of bad habits, copied a lot of code straight from StackOverflow, and thought all problems could be solved by jQuery&hellip;
+</p>
 
 First, I'm finally proud of myself as a developer. I have a BS in Computer Science, but when it comes to web development I am self-taught. That means I learned a lot of bad habits, copied a lot of code straight from StackOverflow, and thought all problems could be solved by jQuery. That is to say I was a bad developer. Clever enough to make a living off of it, sure, but I was very aware that I didn't know as much as my peers. Still don't in many respects, but I have a wealth of experience now  and  can present to a room of developers on topics such as creating performant animations on the web or progressive enhancement, take questions on it, and hold up just fine.
 
 Second, I ditched the frameworks. That's not say that frameworks are bad, hardly, but I found that when I used them I relied on them to the point of them being a crutch. For a while I wouldn't even think of starting anything without loading Bootstrap first. Bootstrap is fantastic! And [@mdo](http://github.com/mdo) is brilliant. But I found that I kept producing the same old "Bootstrap sites" you see/saw everywhere. So I ditched it. Yes, if you look at the CSS you'll find a lot of elements similar to what you would find in Bootstrap or Foundation, but I wrote them. That kept me focused; I didn't have all the bells and whistles so I didn't build something in service of what Bootstrap offered, I built what was service of the content, in service of me. I only made what I need to accomplish achieve the look I was going for.
 
-<div class="section">
-  <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">&nbsp;</div>
-  <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
-    <p class="lead">
-      &hellip;I didn't have all the bells and whistles so I didn't build something in service of what Bootstrap offered&hellip;
-    </p>
-  </div>
-</div>
+<p class="lead">
+  &hellip;I didn't have all the bells and whistles so I didn't build something in service of what Bootstrap offered&hellip;
+</p>
 
 Speaking of the look, I used to jump in with blocking out huge areas of what kind of elements I should have. This time I started at the bottom. Fonts. I tested a bunch of fonts until I landed on what felt right for me: Open Sans and Work Sans if you're curious. Then I [played with how all the different styles](/styles) of text would play off each other.
 
@@ -53,13 +45,9 @@ I wanted my GitHub repos up top because they're the code that I own. Not stuff I
 
 Next my blog. I don't regularly blog. But I want to get into it. So I put it nearer the top as a way to force myself to use it. And I'm using it now, so it works! I'm so clever.
 
-<div class="section">
-  <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
-    <p class="lead">
-      &hellip;my biggest and most ambitious projects and others that were from when I was less capable&hellip;
-    </p>
-  </div>
-</div>
+<p class="lead">
+  &hellip;my biggest and most ambitious projects and others that were from when I was less capable&hellip;
+</p>
 
 Lastly, my resume as it were. Save the best for last, right? It's big and bold and filled with beautiful work. The work that I think defines me; some of my biggest and most ambitious projects and others that were from when I was less capable, but started being able to make a living doing web development.
 

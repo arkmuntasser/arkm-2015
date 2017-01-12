@@ -1,27 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-01-10T20:31:39-07:00</updated><id>http://localhost:4000//</id><title type="html">arkmuntasser</title><subtitle>Just a super cool cat doin' some code stuff...</subtitle><entry><title type="html">Re: Redesign</title><link href="http://localhost:4000/blog/redesigning-my-site/" rel="alternate" type="text/html" title="Re&amp;#58; Redesign" /><published>2017-01-09T00:00:00-07:00</published><updated>2017-01-09T00:00:00-07:00</updated><id>http://localhost:4000/blog/redesigning-my-site</id><content type="html" xml:base="http://localhost:4000/blog/redesigning-my-site/">&lt;p&gt;This is not the first time I’ve tried having my own site as you might have guessed by my use of the word “redesign”. It is, however, the first time that I felt pride in my site. That’s not because it’s the most technically advanced site I know how to make with crazy animations, but because it’s the first to reflect me.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-01-11T23:03:41-07:00</updated><id>http://localhost:4000//</id><title type="html">arkmuntasser</title><subtitle>Just a super cool cat doin' some code stuff...</subtitle><entry><title type="html">Re: Redesign</title><link href="http://localhost:4000/blog/redesigning-my-site/" rel="alternate" type="text/html" title="Re&amp;#58; Redesign" /><published>2017-01-09T00:00:00-07:00</published><updated>2017-01-09T00:00:00-07:00</updated><id>http://localhost:4000/blog/redesigning-my-site</id><content type="html" xml:base="http://localhost:4000/blog/redesigning-my-site/">&lt;p&gt;This is not the first time I’ve tried having my own site as you might have guessed by my use of the word “redesign”. It is, however, the first time that I felt pride in my site. That’s not because it’s the most technically advanced site I know how to make with crazy animations, but because it’s the first to reflect me.&lt;/p&gt;
 
 &lt;p&gt;I’m not a designer by any means so my work leans on what I’ve seen others do and what I thought was cool at the time. That has always been true of my personal sites, but previous iterations felt very clinical or didn’t properly showcase me. And what is even the point of having a website if it doesn’t reflect and showcase you? So how did I get to having a site I’m proud of?&lt;/p&gt;
 
-&lt;div class=&quot;section&quot;&gt;
-  &lt;div class=&quot;col col-xs-12 col-sm-12 col-md-8 col-lg-8&quot;&gt;
-    &lt;p class=&quot;lead&quot;&gt;
-      &amp;hellip;I learned a lot of bad habits, copied a lot of code straight from StackOverflow, and thought all problems could be solved by jQuery&amp;hellip;
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;p class=&quot;lead&quot;&gt;
+  &amp;hellip;I learned a lot of bad habits, copied a lot of code straight from StackOverflow, and thought all problems could be solved by jQuery&amp;hellip;
+&lt;/p&gt;
 
 &lt;p&gt;First, I’m finally proud of myself as a developer. I have a BS in Computer Science, but when it comes to web development I am self-taught. That means I learned a lot of bad habits, copied a lot of code straight from StackOverflow, and thought all problems could be solved by jQuery. That is to say I was a bad developer. Clever enough to make a living off of it, sure, but I was very aware that I didn’t know as much as my peers. Still don’t in many respects, but I have a wealth of experience now  and  can present to a room of developers on topics such as creating performant animations on the web or progressive enhancement, take questions on it, and hold up just fine.&lt;/p&gt;
 
 &lt;p&gt;Second, I ditched the frameworks. That’s not say that frameworks are bad, hardly, but I found that when I used them I relied on them to the point of them being a crutch. For a while I wouldn’t even think of starting anything without loading Bootstrap first. Bootstrap is fantastic! And &lt;a href=&quot;http://github.com/mdo&quot;&gt;@mdo&lt;/a&gt; is brilliant. But I found that I kept producing the same old “Bootstrap sites” you see/saw everywhere. So I ditched it. Yes, if you look at the CSS you’ll find a lot of elements similar to what you would find in Bootstrap or Foundation, but I wrote them. That kept me focused; I didn’t have all the bells and whistles so I didn’t build something in service of what Bootstrap offered, I built what was service of the content, in service of me. I only made what I need to accomplish achieve the look I was going for.&lt;/p&gt;
 
-&lt;div class=&quot;section&quot;&gt;
-  &lt;div class=&quot;col col-xs-12 col-sm-12 col-md-4 col-lg-4&quot;&gt;&amp;nbsp;&lt;/div&gt;
-  &lt;div class=&quot;col col-xs-12 col-sm-12 col-md-8 col-lg-8&quot;&gt;
-    &lt;p class=&quot;lead&quot;&gt;
-      &amp;hellip;I didn't have all the bells and whistles so I didn't build something in service of what Bootstrap offered&amp;hellip;
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;p class=&quot;lead&quot;&gt;
+  &amp;hellip;I didn't have all the bells and whistles so I didn't build something in service of what Bootstrap offered&amp;hellip;
+&lt;/p&gt;
 
 &lt;p&gt;Speaking of the look, I used to jump in with blocking out huge areas of what kind of elements I should have. This time I started at the bottom. Fonts. I tested a bunch of fonts until I landed on what felt right for me: Open Sans and Work Sans if you’re curious. Then I &lt;a href=&quot;/styles&quot;&gt;played with how all the different styles&lt;/a&gt; of text would play off each other.&lt;/p&gt;
 
@@ -41,13 +32,9 @@
 
 &lt;p&gt;Next my blog. I don’t regularly blog. But I want to get into it. So I put it nearer the top as a way to force myself to use it. And I’m using it now, so it works! I’m so clever.&lt;/p&gt;
 
-&lt;div class=&quot;section&quot;&gt;
-  &lt;div class=&quot;col col-xs-12 col-sm-12 col-md-8 col-lg-8&quot;&gt;
-    &lt;p class=&quot;lead&quot;&gt;
-      &amp;hellip;my biggest and most ambitious projects and others that were from when I was less capable&amp;hellip;
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;p class=&quot;lead&quot;&gt;
+  &amp;hellip;my biggest and most ambitious projects and others that were from when I was less capable&amp;hellip;
+&lt;/p&gt;
 
 &lt;p&gt;Lastly, my resume as it were. Save the best for last, right? It’s big and bold and filled with beautiful work. The work that I think defines me; some of my biggest and most ambitious projects and others that were from when I was less capable, but started being able to make a living doing web development.&lt;/p&gt;
 

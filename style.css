@@ -7,7 +7,7 @@
 
 .masthead h1 {
   margin: 0;
-  padding: 8px;
+  padding: 8px 0;
   font-size: 32px;
   font-weight: 300;
   text-align: center;
@@ -94,4 +94,20 @@
   font-size: 14px;
   font-style: italic;
   color: #4CAF50;
+}
+
+.now-playing {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #fefefe;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .1);
+  background-color: #fff;
+}
+
+.now-playing .now-playing-text { padding: 24px 24px 0 24px; }
+
+.now-playing .now-playing-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #ddd;
 }
