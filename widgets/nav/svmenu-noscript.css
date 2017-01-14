@@ -1,0 +1,3 @@
+.nav-noscript-control:checked + .svmenu:before { opacity: 1; }
+
+.nav-noscript-control:checked + .svmenu .svmenu-inner { transform: none; }

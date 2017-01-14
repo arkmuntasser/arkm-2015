@@ -19,6 +19,12 @@
 
 .menu-toggle.right { margin-left: auto; }
 
+.nav-noscript-control {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .svmenu {
   position: fixed;
   z-index: 1000;
