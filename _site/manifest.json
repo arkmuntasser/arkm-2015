@@ -1,6 +1,7 @@
 {
   "lang": "en-us",
   "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "name": "Arkmuntasser – Just a super cool cat doin' some code stuff...",
   "short_name": "arkmuntasser",
   "start_url": "/",
