@@ -4,8 +4,10 @@ layout: default
 
 <div class="container">
   <article class="post">
-    <h1>{{ page.title }}</h1>
-    <p class="lead">{{page.excerpt}}</p>
+    <div class="posts-header">
+      <h1>{{ page.title }}</h1>
+      <p class="lead">{{ page.excerpt }}</p>
+    </div>
 
     <div class="section">
       <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
@@ -24,13 +26,13 @@ layout: default
 
       <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
         {% if page.images %}
-          <ul>
+          <div class="section posts-gallery">
             {% for image in page.images %}
-              <li>
-                {{ image }}
-              </li>
+              <div class="col col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                <img src="{{ image }}" />
+              </div>
             {% endfor %}
-          </ul>
+          </div>
         {% endif %}
 
         {% if page.music %}
