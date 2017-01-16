@@ -1,4 +1,4 @@
-const VERSION = '1';
+const VERSION = '2';
 
 // All the assets that don’t change and our templates.
 // We are pretending that our actual page content is
