@@ -1,9 +1,12 @@
-const VERSION = '2';
+const VERSION = "3.0.5";
 
-// All the assets that don’t change and our templates.
-// We are pretending that our actual page content is
-// dynamic and can’t be cached statically.
-const ASSETS = [
+ const cacheName = 'arkmuntasser';
+const APP_CACHE_NAME = 'arkmuntasser-app';
+const STATIC_CACHE_NAME = 'arkmuntasser-static';
+
+console.log(`installing sw.js`);
+
+const CACHE_STATIC = [
   '/assets/images/footer/cowboy.png',
   '/assets/images/header/logo-at.png',
   '/assets/images/slider/denver-md.jpg',
@@ -12,26 +15,84 @@ const ASSETS = [
   '/assets/images/slider/kansas.jpg',
   '/assets/images/slider/norway-md.jpg',
   '/assets/images/slider/norway.jpg',
-];
+  '/style.css',
+  '/fontello.css',
+  '/widgets/blog/blog-list.css',
+  '/widgets/featured/featured-row.css',
+  '/widgets/featured/imagebox.css',
+  '/widgets/nav/main-nav.css',
+  '/widgets/nav/svmenu-noscript.css',
+  '/widgets/nav/svmenu.css',
+  '/widgets/slider/slider.css',
+  '/widgets/twitter-banner/twitter-banner-noscript.css',
+  '/widgets/twitter-banner/twitter-banner.css',
+  '/android-chrome-192x192.png',
+  '/android-chrome-384x384.png',
+  '/apple-touch-icon.png',
+  '/favicon-16x16.png',
+  '/favicon-32x32.png',
+  '/favicon.ico',
+  '/mstile-150x150.png',
+  '/safari-pinned-tab.svg'
+ ];
 
-// On install, load all our assets into a 'static' cache
-self.oninstall = event => event.waitUntil(async function () {
-  const cache = await caches.open('static');
-  await cache.addAll(ASSETS);
-  return self.skipWaiting();
-}());
+ const CACHE_APP = [
+  '/',
+  '/index.html',
+  '/blog/',
+  '/blog',
+  '/projects/',
+  '/projects'
+ ];
 
-self.onactivate = event => event.waitUntil(self.clients.claim());
+self.addEventListener('install',function(e){
+  e.waitUntil(
+    Promise.all([
+      caches.open(STATIC_CACHE_NAME),
+      caches.open(APP_CACHE_NAME),
+      self.skipWaiting()
+    ]).then(function(storage){
+      var static_cache = storage[0];
+      var app_cache = storage[1];
+      return Promise.all([
+        static_cache.addAll(CACHE_STATIC),
+        app_cache.addAll(CACHE_APP)]);
+    })
+  );
+});
 
-self.onfetch = event => {
-  // Parse the request URL so we can separate domain, path and query.
-  event.parsedUrl = new URL(event.request.url);
+self.addEventListener('activate', function(e) {
+  e.waitUntil(
+    Promise.all([
+      self.clients.claim(),
+      caches.keys().then(function(cacheNames) {
+        return Promise.all(
+          cacheNames.map(function(cacheName) {
+            if (cacheName !== APP_CACHE_NAME && cacheName !== STATIC_CACHE_NAME) {
+              console.log('deleting',cacheName);
+              return caches.delete(cacheName);
+            }
+          })
+        );
+      })
+    ])
+  );
+});
 
-  // If this regexp matches, build a response
-  if (event.parsedUrl.pathname.startsWith('/assets/images/')) {
-    event.respondWith(caches.match(event.request));
-    return;
-  }
-
-  return new Response(null, { status: 404 });
-};
+this.addEventListener('fetch', function(event) {
+  var response;
+  event.respondWith(caches.match(event.request)
+    .then(function (match) {
+      return match || fetch(event.request);
+    }).catch(function() {
+      return fetch(event.request);
+    })
+    .then(function(r) {
+      response = r;
+      caches.open(cacheName).then(function(cache) {
+        cache.put(event.request, response);
+      });
+      return response.clone();
+    })
+  );
+});

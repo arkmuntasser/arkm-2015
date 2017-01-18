@@ -1,3 +1,5 @@
+{% include critical-styles.css %}
+
 .websites { padding-bottom: 48px; }
 
 .projects-wrapper { margin-bottom: 32px; }
