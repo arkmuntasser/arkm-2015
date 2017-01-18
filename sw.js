@@ -1,4 +1,4 @@
-const VERSION = "3.0.5";
+const VERSION = "3.0.6";
 
  const cacheName = 'arkmuntasser';
 const APP_CACHE_NAME = 'arkmuntasser-app';
@@ -15,15 +15,7 @@ const CACHE_STATIC = [
   '/assets/images/slider/kansas.jpg',
   '/assets/images/slider/norway-md.jpg',
   '/assets/images/slider/norway.jpg',
-  '/style.css',
   '/fontello.css',
-  '/widgets/blog/blog-list.css',
-  '/widgets/featured/featured-row.css',
-  '/widgets/featured/imagebox.css',
-  '/widgets/nav/main-nav.css',
-  '/widgets/nav/svmenu-noscript.css',
-  '/widgets/nav/svmenu.css',
-  '/widgets/slider/slider.css',
   '/widgets/twitter-banner/twitter-banner-noscript.css',
   '/widgets/twitter-banner/twitter-banner.css',
   '/android-chrome-192x192.png',

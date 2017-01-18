@@ -2,6 +2,8 @@ name: arkmuntasser
 description: Just a super cool cat doin' some code stuff...
 url: https://arkmuntasser.github.io/
 
+version: 1
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   - name: twitter

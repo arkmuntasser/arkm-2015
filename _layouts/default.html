@@ -23,7 +23,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <!-- Styles -->
-      <link href="{{ site.baseurl }}/style.css" rel="stylesheet">
+      <link href="{{ site.baseurl }}/style.css?v={{ site.version }}" rel="stylesheet">
     </noscript>
 
     <!-- Critical Styles -->
@@ -32,8 +32,6 @@
     </style>
   </head>
   <body>
-    {{ site.data['hash'] }}
-
     {% include header.html %}
 
     {{ content }}
