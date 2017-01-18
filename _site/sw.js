@@ -1,4 +1,4 @@
-const VERSION = "3.0.7";
+const VERSION = "3.0.8";
 
  const cacheName = 'arkmuntasser';
 const APP_CACHE_NAME = 'arkmuntasser-app';
@@ -30,9 +30,7 @@ const CACHE_STATIC = [
 
  const CACHE_APP = [
   '/',
-  '/index.html',
-  '/blog/',
-  '/projects/',
+  '/index.html'
  ];
 
 self.addEventListener('install',function(e){
