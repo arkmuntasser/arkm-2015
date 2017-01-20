@@ -2,16 +2,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+<meta name="author" content="Amir R Muntasser">
+
+<meta name="twitter:site" content="@arkmuntasser">
+<meta name="twitter:creator" content="@arkmuntasser">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.excerpt }}">
+
 {% if page.title %}
-  <meta name="author" content="Amir R Muntasser">
   <meta itemprop="author" content="Amir R Muntasser">
-
   <meta itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">
-
-  <meta name="twitter:site" content="@arkmuntasser">
-  <meta name="twitter:creator" content="@arkmuntasser">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ page.excerpt }}">
 
   <meta itemprop="name" content="{{ page.title }}">
   <meta itemprop="description" content="{{ page.excerpt }}">
@@ -22,4 +22,7 @@
   {% endif %}
 
   <meta name="twitter:card" content="summary_large_image">
+{% else %}
+  <meta name="twitter:image" content="https://arkmuntasser.github.io/assets/images/meta/avatar.jpg">
+  <meta name="twitter:card" content="summary">
 {% endif %}
