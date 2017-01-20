@@ -4,6 +4,9 @@
 
 {% if page.title %}
   <meta name="author" content="Amir R Muntasser">
+  <meta itemprop="author" content="Amir R Muntasser">
+
+  <meta itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">
 
   <meta name="twitter:site" content="@arkmuntasser">
   <meta name="twitter:creator" content="@arkmuntasser">
@@ -14,8 +17,8 @@
   <meta itemprop="description" content="{{ page.excerpt }}">
 
   {% if page.image %}
-    <meta itemprop="image" content="{{page.image}}">
-    <meta name="twitter:image" content="{{page.image}}">
+    <meta itemprop="image" content="https://arkmuntasser.github.io{{ page.image }}">
+    <meta name="twitter:image" content="https://arkmuntasser.github.io{{ page.image }}">
   {% endif %}
 
   <meta name="twitter:card" content="summary_large_image">
