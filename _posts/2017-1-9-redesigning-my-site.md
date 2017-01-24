@@ -1,60 +1,50 @@
 ---
 layout: post
 date: 2017-1-9
-title: Re&#58; Redesign
-slug: redesigning-my-site
-excerpt: A story about a redesign, but also one of self-discovery
-tags: redesign dev growth storytime
+title: Rebuilding My Site
+slug: rebuilding-my-site
+excerpt: A story about a redesign, but also one of self-discovery, but mostly (entirely) the first thing
+tags: redesign website
 music:
   - title: Love Like You
     artist: Aivi & Surasshu feat. Rebecca Sugar
     link: https://www.youtube.com/watch?v=clJk8a5q1Lo
 ---
 
-This is not the first time I've tried having my own site as you might have guessed by my use of the word "redesign". It is, however, the first time that I felt pride in my site. That's not because it's the most technically advanced site I know how to make with crazy animations, but because it's the first to reflect me.
+Let’s talk about sex, baby. And by sex, I mean my new website and not sex at all because our personal lives are just that unless the person reading this is, at the time of me writing this, my fiancée then what’s up?
 
-I'm not a designer by any means so my work leans on what I've seen others do and what I thought was cool at the time. That has always been true of my personal sites, but previous iterations felt very clinical or didn't properly showcase me. And what is even the point of having a website if it doesn't reflect and showcase you? So how did I get to having a site I'm proud of?
+## Design
+I’m not a designer. Let’s just start there. At one time I wanted to be and even referred to myself as one, but I just am not one. And that ok, because for not being a designer I think I have a pretty good eye for what’s good looking.
 
-<p class="lead">
-  &hellip;I learned a lot of bad habits, copied a lot of code straight from StackOverflow, and thought all problems could be solved by jQuery&hellip;
-</p>
+I’ve made and remade my site a number of times over the years and never been happy with the result until now. I finally found the right fonts, colors, and layout that works and helps tell the story of me.
 
-First, I'm finally proud of myself as a developer. I have a BS in Computer Science, but when it comes to web development I am self-taught. That means I learned a lot of bad habits, copied a lot of code straight from StackOverflow, and thought all problems could be solved by jQuery. That is to say I was a bad developer. Clever enough to make a living off of it, sure, but I was very aware that I didn't know as much as my peers. Still don't in many respects, but I have a wealth of experience now  and  can present to a room of developers on topics such as creating performant animations on the web or progressive enhancement, take questions on it, and hold up just fine.
+I think a large part of it was to just embrace the fact that I’m a geek and my site should reflect that.
 
-Second, I ditched the frameworks. That's not say that frameworks are bad, hardly, but I found that when I used them I relied on them to the point of them being a crutch. For a while I wouldn't even think of starting anything without loading Bootstrap first. Bootstrap is fantastic! And [@mdo](http://github.com/mdo) is brilliant. But I found that I kept producing the same old "Bootstrap sites" you see/saw everywhere. So I ditched it. Yes, if you look at the CSS you'll find a lot of elements similar to what you would find in Bootstrap or Foundation, but I wrote them. That kept me focused; I didn't have all the bells and whistles so I didn't build something in service of what Bootstrap offered, I built what was service of the content, in service of me. I only made what I need to accomplish achieve the look I was going for.
+## Backend
+This is a static site generated via Jekyll hosted on GitHub pages. I chose Jekyll because it’s simple and I wanted a no-fuss way to get a site and running. I don’t need a whole CMS for my personal site. Aside from the blog, I don’t intend to update very much very often. And where the blog is concerned I would much rather just upload a markdown file and call it a day than mess with some RTE that’s going to riddle my content with BS HTML tags.
 
-<p class="lead">
-  &hellip;I didn't have all the bells and whistles so I didn't build something in service of what Bootstrap offered&hellip;
-</p>
+Though this is a static Jekyll site, that doesn’t mean there aren’t cool things going on under the hood. For example, this site has a service worker. Does it need one? No, of course not. I mostly just wanted to learn about service workers and the best way to learn is to do. So, if you’re in Chrome or FF (I think) you should be able to view this offline.
 
-Speaking of the look, I used to jump in with blocking out huge areas of what kind of elements I should have. This time I started at the bottom. Fonts. I tested a bunch of fonts until I landed on what felt right for me: Open Sans and Work Sans if you're curious. Then I [played with how all the different styles](/styles) of text would play off each other.
+There are a number of improvement I am looking to make to the site going forward. For example, from an accessibility perspective, I am really dropping the ball in many ways. I hope to rectify that in the not too distant future. And I am sure as time goes on I’ll think of a number of bells and whistles to add, but for the launch I really trimmed the site down to the basics.
 
-From there I worked out a rough idea of the colors I wanted to use. I wanted something eye-catching that screamed to be looked at. So I went with neon-pink.
+## Sections
+I decided that there were 4 areas that I wanted to focus on for my site: main banner, projects, blog, and resume.
 
-Then, I thought about what was one thing I could do to really give someone a sense of who I am? Immediately it was clear to me that I needed to involve my Twitter in some way. Thus the banner at the top of the homepage. Funny thing about it, it doesn't technically use Twitter to power it. Twitter's API doesn't like to be used client-side and with this site being a Jekyll-powered GitHub page server-side wasn't going to happen.
+### Main Banner
+This is the first major element of the site and I wanted it to be something that would instantly give the visitor a sense of who I was. Rather than have some static image and pithy catchphrase I wanted something that could change and give an insight into my personality. What better than to link it up to my Twitter.
 
-So I turned to good ol' IFTTT for a solution. I set up a rule so that whenever I tweeted using trigger hashtag, my tweet would be entered into a Google Spreadsheet that I could then read from. Problem was there's no good way to pull out the image url from a tweet in this way. I was determined to be able to post an image and some text and have it show up on my site. Turns out Instagram had exactly what I was looking for.
+Technically, it’s not actually connected to my Twitter at all. It’s connected to my Instagram. That’s because it’s easier to grab the url for an image on Instagram than it is on Twitter, but when I post to Instagram those get reposted on Twitter natively anyway. And since I primarily use Twitter, I don’t think it’s unfair to refer to this as my “Twitter” banner.
 
-Same solution, IFTTT takes Instagram posts from my account with a trigger hashtag and puts them in spreadsheet. And for good measure, since I don't really use Instagram all that much and don't want to direct people to it, IFTTT also reposts to Twitter natively. Ta-dah!
+### Projects
+Next are my favorite GitHub projects. I am always spinning up repos for new ideas and they are were I do most of my learning. If you wanted to get to know me as a developer, then my work is where you should start.
 
-Next, I narrowed down what content I wanted to show: my Twitter (most reflective of me personally), my GitHub repos that I'm most proud of, my blog, and finally a trimmed down portfolio. In that order.
+### Blog
+I don’t really blog and never really have. But I’ve always wanted to do. I’ve had various blogs on Tumblr and Blogspot back in the day, but those never really did it for me. I could never get into the community those site were built around. My hope is that by having my blog here with no expectation of a community that I might actually get to using it to actually journal my life.
 
-I already explained why the Twitter banner is first, like, a couple short paragraphs ago. If you can't remember, then you have a terrible memory.
+I’m not sure what the balance between personal and professional will be yet, but I’m sure I’ll figure it out as I go.
 
-I wanted my GitHub repos up top because they're the code that I own. Not stuff I made while employed or contracted elsewhere. This is about me after all.
+### Resume
+This is just to provide my bonafides as a developer and show off some of the work I am most proud of having the opportunity to work on and/or lead the development of.
 
-Next my blog. I don't regularly blog. But I want to get into it. So I put it nearer the top as a way to force myself to use it. And I'm using it now, so it works! I'm so clever.
-
-<p class="lead">
-  &hellip;my biggest and most ambitious projects and others that were from when I was less capable&hellip;
-</p>
-
-Lastly, my resume as it were. Save the best for last, right? It's big and bold and filled with beautiful work. The work that I think defines me; some of my biggest and most ambitious projects and others that were from when I was less capable, but started being able to make a living doing web development.
-
-And then I end-capped it with a sweet Cowboy Bebop reference. Once again, this is all about me, baby.
-
-I could get deeper into the technical nitty-gritty details, but if you're the type of person interested in that then I suspect you'll have a more educational experience just inspecting everything.
-
-Anyway, this post has gone on long enough.
-
-See you space cowboy&hellip;
+## Finale
+So there you have it. A quick break down of my new site. If you have any questions you can tweet at me or email me. Please don’t actually email me because that would be terrible and I’m sure not going to respond to you so just tweet me.

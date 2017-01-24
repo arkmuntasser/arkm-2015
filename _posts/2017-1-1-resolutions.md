@@ -3,7 +3,7 @@ layout: post
 date: 2017-1-1
 title: Resolutions For 2017
 slug: resolutions-2017
-excerpt: Personal and professional goals for this coming year.
+excerpt: Personal and professional goals for this coming year
 tags: resolutions 2017
 ---
 

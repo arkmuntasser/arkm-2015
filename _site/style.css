@@ -44,6 +44,11 @@
 
 .post .posts-gallery img { margin-bottom: 16px; }
 
+.post p img {
+  width: 100%;
+  max-width: 100%;
+}
+
 .now-playing {
   margin-top: 16px;
   margin-bottom: 16px;
