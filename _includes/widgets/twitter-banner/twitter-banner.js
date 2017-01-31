@@ -2,7 +2,7 @@ var bannerEl = document.querySelector('[data-social-banner]');
 
 var twittrURL = 'https://docs.google.com/spreadsheets/d/1WZm_0b5TgN9wLmwCbWztuMggzo6s8n2Y2cf__kGMJ4Y/pubhtml?gid=0&single=true&output=html';
 
-var instagramURL = 'https://docs.google.com/spreadsheets/d/1WpuD0GvstX6gqIrMXWjqtM7GYt23UQ0Lf_LbYU1wz4I/pubhtml'
+var instagramURL = 'https://docs.google.com/spreadsheets/d/1WpuD0GvstX6gqIrMXWjqtM7GYt23UQ0Lf_LbYU1wz4I/pubhtml?v={{ site.version }}'
 
 function init() {
   Tabletop.init({
