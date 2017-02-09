@@ -1,4 +1,4 @@
-const VERSION = "3.0.20";
+const VERSION = "3.1.0";
 
 const cacheName = 'arkmuntasser';
 const APP_CACHE_NAME = 'arkmuntasser-app';
@@ -68,44 +68,41 @@ self.addEventListener('activate', function(e) {
 });
 
 this.addEventListener('fetch', function(event) {
-  var response;
-
-  if (event.request.url.endsWith('/pubhtml')) {
+  if (event.request.url.includes('spreadsheets')) {
     event.respondWith(async function() {
       try {
-        fetch(event.request)
-        .then(function(r) {
-          response = r;
+        let resp;
+        const fetchedVersion = resp = fetch(event.request);
+        const fetchedCopy = fetchedVersion.then(function(response) {
+          const r = response.clone();
           caches.open(cacheName).then(function(cache) {
-            cache.put(event.request, response);
+            cache.put(event.request, r);
           });
-
-          return response.clone();
-        })
-      } catch(_) {
-        caches.match(event.request)
-        .then(function(match) {
-          return match;
-        })
-        .catch(function() {
-          return new Response(null, { status : 404 });
+        }, function() {
+          resp = caches.match(event.request) || new Response(null, { status : 404 });
         });
-      }
-    });
-  }
 
-  event.respondWith(caches.match(event.request)
-    .then(function (match) {
-      return match || fetch(event.request);
-    }).catch(function() {
-      return fetch(event.request);
-    })
-    .then(function(r) {
-      response = r;
-      caches.open(cacheName).then(function(cache) {
-        cache.put(event.request, response);
-      });
-      return response.clone();
-    })
-  );
+        return await resp;
+      } catch(_) {
+        const caughtResponse = caches.match(event.request) || new Response(null, { status : 404 });
+        return caughtResponse;
+      }
+    }());
+  } else {
+    var response;
+    event.respondWith(caches.match(event.request)
+      .then(function (match) {
+        return match || fetch(event.request);
+      }).catch(function() {
+        return fetch(event.request);
+      })
+      .then(function(r) {
+        response = r;
+        caches.open(cacheName).then(function(cache) {
+          cache.put(event.request, response);
+        });
+        return response.clone();
+      })
+    );
+  }
 });
