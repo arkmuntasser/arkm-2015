@@ -1,4 +1,4 @@
-const VERSION = "3.0.19";
+const VERSION = "3.0.20";
 
 const cacheName = 'arkmuntasser';
 const APP_CACHE_NAME = 'arkmuntasser-app';
@@ -69,6 +69,31 @@ self.addEventListener('activate', function(e) {
 
 this.addEventListener('fetch', function(event) {
   var response;
+
+  if (event.request.url.endsWith('/pubhtml')) {
+    event.respondWith(async function() {
+      try {
+        fetch(event.request)
+        .then(function(r) {
+          response = r;
+          caches.open(cacheName).then(function(cache) {
+            cache.put(event.request, response);
+          });
+
+          return response.clone();
+        })
+      } catch(_) {
+        caches.match(event.request)
+        .then(function(match) {
+          return match;
+        })
+        .catch(function() {
+          return new Response(null, { status : 404 });
+        });
+      }
+    });
+  }
+
   event.respondWith(caches.match(event.request)
     .then(function (match) {
       return match || fetch(event.request);
