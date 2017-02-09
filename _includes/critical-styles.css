@@ -351,8 +351,8 @@ blockquote {
 }
 
 @media (max-width: 640px) {
-  .masthead .container { padding: 0 16px 0 64px; }
-  .masthead h1 { font-size: 26px; }
+  .masthead .container { padding: 0 64px; }
+  .masthead h1 { font-size: 22px; }
   .masthead h1 .logo { height: 43px; }
 }
 
