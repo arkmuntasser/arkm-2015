@@ -5,10 +5,8 @@ title: Punching Nazis is an American Pastime
 slug: punching-nazi-american-pastime
 excerpt: Indiana Jones killed so many Nazis, like, if it were anyone other than Nazis you would say it bordered on excessive
 tags: america punching nazis
-image: /assets/posts/2017-1-23-punching-nazi/cap-punching-hitler.jpg
+image: /assets/posts/2017-1-23-punching-a-nazi/cap-punching-hitler.jpg
 ---
-
-![alt text](/assets/posts/2017-1-23-punching-a-nazi/cap-punching-hitler.jpg "Captain America punches Hitler, Marvel Comics")
 
 Remember when Captain America punched Hitler? That was a good time. Fuck Hitler. And fuck Nazis.
 

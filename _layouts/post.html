@@ -2,8 +2,14 @@
 layout: default
 ---
 
+{% if page.image %}
+  <div class="post-header-img">
+    <img src="{{ site.basurl }}{{ page.image }}" />
+  </div>
+{% endif %}
+
 <div class="container">
-  <article class="post">
+  <article class="post {% if page.image %}header-img{% endif %}">
     <div class="posts-header">
       <h1>{{ page.title }}</h1>
       <p class="lead">{{ page.excerpt }}</p>
@@ -25,32 +31,7 @@ layout: default
       </div>
 
       <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        {% if page.images %}
-          <div class="section posts-gallery">
-            {% for image in page.images %}
-              <div class="col col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                <img src="{{ image }}" />
-              </div>
-            {% endfor %}
-          </div>
-        {% endif %}
-
-        {% if page.music %}
-          {% for music in page.music %}
-            <h5>#NowPlaying</h5>
-            <div class="now-playing">
-              <div class="music">
-                <div class="now-playing-text">
-                  <div class="title">{{ music.title }}</div>
-                  <div class="subtitle">{{ music.artist }}</div>
-                </div>
-                <div class="now-playing-footer">
-                  <a href="{{ music.link }}" target="_blank" title="{{ music.title }} YouTube link" rel="noopener">Play Song - YouTube</a>
-                </div>
-              </div>
-            </div>
-          {% endfor %}
-        {% endif %}
+        {% include widgets/projects/project-list.html %}
       </div>
     </div>
   </article>

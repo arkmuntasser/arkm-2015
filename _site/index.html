@@ -354,6 +354,37 @@ blockquote {
 .page,
 .post { padding: 64px 0; }
 
+.post.header-img { padding-top: 32px; }
+
+@media (max-width: 640px) {
+  .post.header-img { padding-top: 16px; }
+}
+
+.post-header-img {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.post-header-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  max-width: initial;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+  .post-header-img { height: 400px; }
+}
+
+@media (max-width: 640px) {
+  .post-header-img { height: 300px; }
+}
+
 .flex-video {
   position: relative;
   padding-bottom: 56.25%;
@@ -699,8 +730,6 @@ document.addEventListener('DOMContentLoaded', function() {
         </p>
       </div>
       <div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
-
-
         <!-- widget css -->
 <noscript id="deferred-styles">
   <link rel="stylesheet" href="/widgets/blog/blog-list.css?v=2" />

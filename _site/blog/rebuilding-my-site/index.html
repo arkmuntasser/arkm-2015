@@ -359,6 +359,37 @@ blockquote {
 .page,
 .post { padding: 64px 0; }
 
+.post.header-img { padding-top: 32px; }
+
+@media (max-width: 640px) {
+  .post.header-img { padding-top: 16px; }
+}
+
+.post-header-img {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.post-header-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  max-width: initial;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+  .post-header-img { height: 400px; }
+}
+
+@media (max-width: 640px) {
+  .post-header-img { height: 300px; }
+}
+
 .flex-video {
   position: relative;
   padding-bottom: 56.25%;
@@ -626,8 +657,10 @@ new SVMenu({ position: 'left' });
 
 
 
-    <div class="container">
-  <article class="post">
+    
+
+<div class="container">
+  <article class="post ">
     <div class="posts-header">
       <h1>Rebuilding My Site</h1>
       <p class="lead">A story about a redesign, but also one of self-discovery, but mostly (entirely) the first thing</p>
@@ -688,24 +721,104 @@ new SVMenu({ position: 'left' });
       </div>
 
       <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        
+        <!-- widget css -->
+<noscript id="deferred-styles">
+  <link rel="stylesheet" href="/widgets/blog/blog-list.css?v=2" />
+</noscript>
 
-        
-          
-            <h5>#NowPlaying</h5>
-            <div class="now-playing">
-              <div class="music">
-                <div class="now-playing-text">
-                  <div class="title">Love Like You</div>
-                  <div class="subtitle">Aivi & Surasshu feat. Rebecca Sugar</div>
-                </div>
-                <div class="now-playing-footer">
-                  <a href="https://www.youtube.com/watch?v=clJk8a5q1Lo" target="_blank" title="Love Like You YouTube link" rel="noopener">Play Song - YouTube</a>
-                </div>
-              </div>
-            </div>
-          
-        
+<!-- widget html -->
+<h4>Recent Projects <span class="blinking-cursor">|</span></h4>
+<div class="blog-list posts">
+  <ul class="no-bullets">
+    
+      <li>
+        <article class="post">
+  <div class="title">happy-new-year</div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/happy-new-year" target="_blank" title="happy-new-year github repo" rel="noopener">https://github.com/arkmuntasser/happy-new-year</a></div>
+
+  <div class="entry">
+    <p>
+      🎉 Happy New Year! - A simple countdown to the new year with fireworks! 🎉
+    </p>
+  </div>
+
+  <div class="actions">
+    <ul class="inline-list">
+      
+        <li class="action">
+          <a href="https://github.com/arkmuntasser/happy-new-year" target="_blank" title="happy-new-year github repo" rel="noopener">View GitHub Repo</a>
+        </li>
+      
+
+      
+        <li class="action">
+          <a href="https://arkmuntasser.github.io/happy-new-year" target="_blank" title="happy-new-year website" rel="noopener">View Project Website</a>
+        </li>
+      
+    </ul>
+  </div>
+</article>
+
+      </li>
+    
+      <li>
+        <article class="post">
+  <div class="title">ui-components</div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/ui-components" target="_blank" title="ui-components github repo" rel="noopener">https://github.com/arkmuntasser/ui-components</a></div>
+
+  <div class="entry">
+    <p>
+      A collection/playground of UI components and experiments.
+    </p>
+  </div>
+
+  <div class="actions">
+    <ul class="inline-list">
+      
+        <li class="action">
+          <a href="https://github.com/arkmuntasser/ui-components" target="_blank" title="ui-components github repo" rel="noopener">View GitHub Repo</a>
+        </li>
+      
+
+      
+    </ul>
+  </div>
+</article>
+
+      </li>
+    
+      <li>
+        <article class="post">
+  <div class="title">css-triggers</div>
+  <div class="subtitle"><a href="https://github.com/arkmuntasser/css-triggers" target="_blank" title="css-triggers github repo" rel="noopener">https://github.com/arkmuntasser/css-triggers</a></div>
+
+  <div class="entry">
+    <p>
+      An Atom package that lets you know if your css will trigger layout, paint and/or composite.
+    </p>
+  </div>
+
+  <div class="actions">
+    <ul class="inline-list">
+      
+        <li class="action">
+          <a href="https://github.com/arkmuntasser/css-triggers" target="_blank" title="css-triggers github repo" rel="noopener">View GitHub Repo</a>
+        </li>
+      
+
+      
+    </ul>
+  </div>
+</article>
+
+      </li>
+    
+  </ul>
+  <div class="blog-list-footer">
+    <a class="btn" href="/projects">See More Projects</a>
+  </div>
+</div>
+
       </div>
     </div>
   </article>
