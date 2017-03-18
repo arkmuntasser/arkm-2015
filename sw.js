@@ -68,7 +68,7 @@ self.addEventListener('activate', function(e) {
 });
 
 this.addEventListener('fetch', function(event) {
-  if (event.request.url.includes('spreadsheets')) {
+  if (event.request.url.includes('spreadsheets') || event.request.url.includes('to-becks')) {
     event.respondWith(async function() {
       try {
         let resp;
