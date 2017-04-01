@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/blog/punching-nazi-american-pastime/</loc>
-<lastmod>2017-01-23T00:00:00-07:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/nintendo-switch-beautiful/</loc>
-<lastmod>2017-01-14T00:00:00-07:00</lastmod>
+<loc>http://localhost:4000/blog/resolutions-2017/</loc>
+<lastmod>2017-01-01T00:00:00-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/rebuilding-my-site/</loc>
 <lastmod>2017-01-09T00:00:00-07:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/blog/resolutions-2017/</loc>
-<lastmod>2017-01-01T00:00:00-07:00</lastmod>
+<loc>http://localhost:4000/blog/nintendo-switch-beautiful/</loc>
+<lastmod>2017-01-14T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/punching-nazi-american-pastime/</loc>
+<lastmod>2017-01-23T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/upcoming-management-series/</loc>
+<lastmod>2017-04-01T00:00:00-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/404.html</loc>

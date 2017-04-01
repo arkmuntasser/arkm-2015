@@ -1,4 +1,4 @@
-const VERSION = "3.1.3";
+const VERSION = "3.1.4";
 
 const cacheName = 'arkmuntasser';
 const APP_CACHE_NAME = 'arkmuntasser-app';
@@ -68,7 +68,7 @@ self.addEventListener('activate', function(e) {
 });
 
 this.addEventListener('fetch', function(event) {
-  if (event.request.url.includes('spreadsheets')) {
+  if (event.request.url.includes('spreadsheets') || event.request.url.includes('to-becks')) {
     event.respondWith(async function() {
       try {
         let resp;
