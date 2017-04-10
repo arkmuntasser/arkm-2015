@@ -264,6 +264,14 @@ ol {
 
 ul ul { margin-bottom: 0; }
 
+hr {
+  margin: 32px 0;
+  border-left: none;
+  border-right: none;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
 .no-bullets {
   margin-left: 0;
   list-style: none;
@@ -372,6 +380,20 @@ blockquote {
 }
 
 .post-header-img img { width: 100%; }
+
+.post .entry .series-callout {
+  font-style: italic;
+}
+
+@media (min-width: 1025px) {
+  .post .entry .series-callout {
+    float: left;
+    padding-right: 32px;
+    padding-top: 16px;
+    width: 100%;
+    max-width: 33.33333%;
+  }
+}
 
 .flex-video {
   position: relative;
@@ -657,6 +679,28 @@ new SVMenu({ position: 'left' });
 <!-- widget html -->
 <div class="blog-list posts">
   <div class="section">
+    
+      <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
+        <article class="post">
+  <div class="title"><a href="/blog/developer-managing-setting-goals/">Developer Managing - Setting Real Goals <span class="link-arrow">&#10095;</span></a></div>
+  <div class="subtitle">April  9, 2017</div>
+
+  <div class="entry">
+    <p>
+      I want to be the very best! Like no one ever was!&hellip; <a href="/blog/developer-managing-setting-goals/" class="read-more">Read More</a>
+    </p>
+  </div>
+
+  <div class="tags">
+    
+      <span class="tag">#management</span>
+    
+      <span class="tag">#goals</span>
+    
+  </div>
+</article>
+
+      </div>
     
       <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 block-item">
         <article class="post">
