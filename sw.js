@@ -1,4 +1,4 @@
-const VERSION = '3.1.7';
+const VERSION = '3.1.8';
 
 const cacheName = 'arkmuntasser';
 const APP_CACHE_NAME = 'arkmuntasser-app';

@@ -55,7 +55,7 @@
 .svmenu-inner {
   position: relative;
   width: 100%;
-  max-width: 200px;
+  max-width: 280px;
   background: #fff;
   height: 100%;
   box-shadow: 2px 0 12px rgba(0,0,0,0.4);
@@ -150,8 +150,12 @@
 .svmenu-content-inner-subcontent .svmenu-item-inner > a {
   display: block;
   padding: 0 16px;
-  /*color: inherit;*/
+  /* color: inherit; */
   text-decoration: inherit;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 
 .svmenu-content-inner .svmenu-item-inner > a:hover,
