@@ -1,4 +1,4 @@
-const VERSION = "3.1.6";
+const VERSION = '3.1.6';
 
 const cacheName = 'arkmuntasser';
 const APP_CACHE_NAME = 'arkmuntasser-app';
@@ -25,27 +25,25 @@ const CACHE_STATIC = [
   '/favicon-32x32.png',
   '/favicon.ico',
   '/mstile-150x150.png',
-  '/safari-pinned-tab.svg'
- ];
+  '/safari-pinned-tab.svg',
+];
 
- const CACHE_APP = [
-  '/',
-  '/index.html'
- ];
+const CACHE_APP = ['/', '/index.html'];
 
-self.addEventListener('install',function(e){
+self.addEventListener('install', function(e) {
   e.waitUntil(
     Promise.all([
       caches.open(STATIC_CACHE_NAME),
       caches.open(APP_CACHE_NAME),
-      self.skipWaiting()
-    ]).then(function(storage){
+      self.skipWaiting(),
+    ]).then(function(storage) {
       var static_cache = storage[0];
       var app_cache = storage[1];
       return Promise.all([
         static_cache.addAll(CACHE_STATIC),
-        app_cache.addAll(CACHE_APP)]);
-    })
+        app_cache.addAll(CACHE_APP),
+      ]);
+    }),
   );
 });
 
@@ -56,53 +54,69 @@ self.addEventListener('activate', function(e) {
       caches.keys().then(function(cacheNames) {
         return Promise.all(
           cacheNames.map(function(cacheName) {
-            if (cacheName !== APP_CACHE_NAME && cacheName !== STATIC_CACHE_NAME) {
-              console.log('deleting',cacheName);
+            if (
+              cacheName !== APP_CACHE_NAME && cacheName !== STATIC_CACHE_NAME
+            ) {
+              console.log('deleting', cacheName);
               return caches.delete(cacheName);
             }
-          })
+          }),
         );
-      })
-    ])
+      }),
+    ]),
   );
 });
 
 this.addEventListener('fetch', function(event) {
-  if (event.request.url.includes('spreadsheets') || event.request.url.includes('to-becks')) {
-    event.respondWith(async function() {
-      try {
-        let resp;
-        const fetchedVersion = resp = fetch(event.request);
-        const fetchedCopy = fetchedVersion.then(function(response) {
-          const r = response.clone();
-          caches.open(cacheName).then(function(cache) {
-            cache.put(event.request, r);
-          });
-        }, function() {
-          resp = caches.match(event.request) || new Response(null, { status : 404 });
-        });
+  if (
+    event.request.url.includes('spreadsheets') ||
+    event.request.url.includes('to-becks')
+  ) {
+    event.respondWith(
+      (async function() {
+        try {
+          let resp;
+          const fetchedVersion = (resp = fetch(event.request));
+          const fetchedCopy = fetchedVersion.then(
+            function(response) {
+              const r = response.clone();
+              caches.open(cacheName).then(function(cache) {
+                cache.put(event.request, r);
+              });
+            },
+            function() {
+              resp =
+                caches.match(event.request) ||
+                new Response(null, {status: 404});
+            },
+          );
 
-        return await resp;
-      } catch(_) {
-        const caughtResponse = caches.match(event.request) || new Response(null, { status : 404 });
-        return caughtResponse;
-      }
-    }());
+          return await resp;
+        } catch (_) {
+          const caughtResponse =
+            caches.match(event.request) || new Response(null, {status: 404});
+          return caughtResponse;
+        }
+      })(),
+    );
   } else {
     var response;
-    event.respondWith(caches.match(event.request)
-      .then(function (match) {
-        return match || fetch(event.request);
-      }).catch(function() {
-        return fetch(event.request);
-      })
-      .then(function(r) {
-        response = r;
-        caches.open(cacheName).then(function(cache) {
-          cache.put(event.request, response);
-        });
-        return response.clone();
-      })
+    event.respondWith(
+      caches
+        .match(event.request)
+        .then(function(match) {
+          return match || fetch(event.request);
+        })
+        .catch(function() {
+          return fetch(event.request);
+        })
+        .then(function(r) {
+          response = r;
+          caches.open(cacheName).then(function(cache) {
+            cache.put(event.request, response);
+          });
+          return response.clone();
+        }),
     );
   }
 });
