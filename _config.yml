@@ -46,6 +46,37 @@ projects:
 
 # Portfolio collection
 portfolio:
+  - name: vlv
+    label: Visit Las Vegas
+    url: https://www.visitlasvegas.com/
+    image: ''
+    description: Find insider information on things to do, shows, food and drink, and more to plan your Las Vegas vacation of a lifetime.
+    related-post:
+    business-tags: simpleview
+    dev-tags:
+      - tag: frontend
+    featured: true
+  - name: columbia
+    label: Experience Columbia
+    url: https://www.experiencecolumbiasc.com/
+    image: ''
+    description: Find official travel information about Columbia, SC, including hotels, restaurants, events, and more from Experience Columbia SC, the online travel resource of Columbia, South Carolina.
+    related-post:
+    business-tags: simpleview
+    dev-tags:
+      - tag: frontend
+    featured: true
+  - name: chicago
+    label: Choose Chicago
+    url: https://choosechicago.com
+    image: ''
+    description: Find events, restaurants, hotels and things to do in Chicago from the city's official travel guide online. Get the locals' view on all the places to visit.
+    related-post:
+    business-tags: simpleview
+    dev-tags:
+      - tag: frontend
+      - tag: responsification
+    featured: true
   - name: columbus
     label: Experience Columbus
     url: http://experiencecolumbus.com
